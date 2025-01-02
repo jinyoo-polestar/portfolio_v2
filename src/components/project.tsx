@@ -3,9 +3,7 @@ import { projectData } from "../data";
 export default function Project() {
   return (
     <section className="flex min-h-screen p-20 flex-col font-higilight bg-bluegray gap-9">
-      <h1 className="text-4xl text-blue font-semibold tracking-widest mb-10">
-        MY PROJECT
-      </h1>
+      <h1 className="section-title">MY PROJECT</h1>
       <div className="flex flex-wrap gap-8">
         {projectData.map((item) => (
           <article className="inline-flex flex-col w-1/4 bg-white p-4 rounded-lg gap-6 relative max-w-90">

@@ -22,7 +22,10 @@ module.exports = {
       sans: ["Prtendard", "sans-serif"],
       higilight: ["Paperlogy", "Pretendard", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      padding: { "1/10": "10%" },
+      width: { "9/10": "90%" },
+    },
   },
   plugins: [],
 };

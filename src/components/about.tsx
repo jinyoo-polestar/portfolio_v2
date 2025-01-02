@@ -17,7 +17,7 @@ import slackLogo from "../assets/image/logo_scss.svg";
 
 export default function About() {
   return (
-    <section className="flex relative flex-row h-screen justify-start font-higilight">
+    <section className="flex relative h-screen justify-start font-higilight">
       <aside className="flex flex-col justify-center items-center bg-bluegray w-1/4 rounded-r-3xl gap-3 h-full sticky top-0">
         <img src={nameLogo} className="w-1/2" alt="" />
         <h2 className="text-3xl text-blue font-bold">퍼블리셔 신진유</h2>
@@ -44,7 +44,7 @@ export default function About() {
         </article>
         <article className="flex flex-col p-10 min-h-screen w-8/12 justify-evenly snap-start">
           <div>
-            <h3 className="section-title">사용 가능한 기술&툴</h3>
+            <h3 className="section-subtitle">사용 가능한 기술&툴</h3>
             <div className="flex gap-2 mb-10">
               <img src={htmlLogo} alt="html" className="h-10" />
               <img src={cssLogo} alt="css" className="h-10" />
@@ -62,7 +62,7 @@ export default function About() {
             </div>
           </div>
           <div>
-            <h3 className="section-title">학력사항</h3>
+            <h3 className="section-subtitle">학력사항</h3>
             <div className="flex mb-10 font-sans text-lg w-9/12">
               <div className="w-3/5 ">
                 <p className="flex justify-between">
@@ -75,7 +75,7 @@ export default function About() {
             </div>
           </div>
           <div>
-            <h3 className="section-title">나를 나타내는 키워드</h3>
+            <h3 className="section-subtitle">나를 나타내는 키워드</h3>
             <div className="flex mb-10  flex-wrap gap-2 w-9/12 font-sans text-gray200">
               <p className="text-l border border-black px-4 py-2 rounded-3xl">
                 🔎 디테일한 부분들을 잘 챙기는 <b>꼼꼼함</b>

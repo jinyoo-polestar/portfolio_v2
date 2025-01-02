@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.section-layout {
+  @apply flex relative min-h-screen px-1/10 py-14 justify-start font-higilight;
+}
+
 .section-title {
+  @apply text-4xl text-blue font-semibold tracking-widest;
+}
+
+.section-subtitle {
   @apply text-3xl text-blue font-semibold mb-4;
 }
 
