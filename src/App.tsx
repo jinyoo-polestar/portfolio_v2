@@ -1,10 +1,11 @@
-import { Footer, Question, Project } from "./components";
+import { Footer, Question, Project, About } from "./components";
 import "./assets/font/font.css";
 
 function App() {
   return (
-    <div style={{ width: "100vw" }}>
+    <div>
       <Question />
+      <About />
       <Project />
       <Footer />
     </div>

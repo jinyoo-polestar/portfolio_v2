@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  width: 100%;
-  font-family: "Pretendard, sans-serif";
+.section-title {
+  @apply text-3xl text-blue font-semibold mb-4;
+}
 
+.career-card {
+  @apply inline-flex font-sans border-gray border rounded-xl p-8 gap-6 w-2/5 hover:border-blue;
+}
+
+:root {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Pretendard, sans-serif";
   color: #000;
-  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,9 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
 body {
-  display: flex;
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  background-color: #fff;
 }
