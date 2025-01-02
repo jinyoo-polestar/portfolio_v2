@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  src: url(/assets/font/Pretendard/Pretendard-Thin.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  src: url(/assets/font/Pretendard/Pretendard-ExtraLight.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  src: url(/assets/font/Pretendard/Pretendard-Light.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  src: url(/assets/font/Pretendard/Pretendard-Regular.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  src: url(/assets/font/Pretendard/Pretendard-Medium.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  src: url(/assets/font/Pretendard/Pretendard-SemiBold.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  src: url(/assets/font/Pretendard/Pretendard-Bold.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 100;
+  src: url(/assets/font/Pretendard/Paperlogy-1Thin.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 200;
+  src: url(/assets/font/Pretendard/Paperlogy-2ExtraLight.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 300;
+  src: url(/assets/font/Pretendard/Paperlogy-3Light.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 400;
+  src: url(/assets/font/Pretendard/Paperlogy-4Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 500;
+  src: url(/assets/font/Pretendard/Paperlogy-5Medium.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 600;
+  src: url(/assets/font/Pretendard/Paperlogy-6Semibold.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 700;
+  src: url(/assets/font/Pretendard/Paperlogy-7Bold.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 800;
+  src: url(/assets/font/Pretendard/Paperlogy-8ExtraBold.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 900;
+  src: url(/assets/font/Pretendard/Paperlogy-9Black.ttf) format("ttf");
+}
