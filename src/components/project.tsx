@@ -1,6 +1,4 @@
-import moreIcon from "../../assets/image/ic_more_black.svg";
-
-import { projectData } from "./projectData";
+import { projectData } from "../data";
 
 export default function Project() {
   return (
@@ -16,24 +14,18 @@ export default function Project() {
             <div className="inline-flex gap-1">
               {item.tags.map((tag) => {
                 return (
-                  <>
-                    <p className="bg-gray text-xs py-1 px-3 rounded-2xl">
-                      {tag}
-                    </p>
-                  </>
+                  <p className="bg-gray text-xs py-1 px-3 rounded-2xl">{tag}</p>
                 );
               })}
             </div>
             <div>
               {item.tools.map((tool) => {
                 return (
-                  <>
-                    <img
-                      src={tool.src}
-                      className="float-left mr-2 h-6"
-                      alt={tool.alt}
-                    />
-                  </>
+                  <img
+                    src={tool.src}
+                    className="float-left mr-2 h-6"
+                    alt={tool.alt}
+                  />
                 );
               })}
             </div>

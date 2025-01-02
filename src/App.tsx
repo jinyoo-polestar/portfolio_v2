@@ -1,9 +1,10 @@
-import { Footer, Question, Project, About } from "./components";
+import { Footer, Question, Project, About, Persona } from "./components";
 import "./assets/font/font.css";
 
 function App() {
   return (
     <div>
+      <Persona />
       <Question />
       <About />
       <Project />

@@ -1,9 +1,6 @@
+import { workData } from "../data";
+
 import nameLogo from "../assets/image/logo_name.svg";
-import frameIcon from "../assets/image/ic_frame.svg";
-import dogIcon from "../assets/image/ic_dog.svg";
-import cartIcon from "../assets/image/ic_cart.svg";
-import documentIcon from "../assets/image/ic_document.svg";
-import companyIcon from "../assets/image/ic_company.svg";
 import htmlLogo from "../assets/image/logo_html.svg";
 import cssLogo from "../assets/image/logo_css.svg";
 import notionLogo from "../assets/image/logo_notion.svg";
@@ -17,55 +14,6 @@ import photoshopLogo from "../assets/image/logo_photoshop.svg";
 import reactLogo from "../assets/image/logo_react.svg";
 import scssLogo from "../assets/image/logo_scss.svg";
 import slackLogo from "../assets/image/logo_scss.svg";
-
-const workData = [
-  {
-    name: "아들러 (개발팀 FE/PM/기획)",
-    details: [
-      "반응형 웹 작업 및 FE 기능 개발",
-      "프로젝트 일정 관리 및 팀 커뮤니케이션",
-      "요구사항 정의 ~ 와이어프레임 설계 (서비스 기획)",
-    ],
-    img: frameIcon,
-  },
-  {
-    name: "두루두루 (마케팅/디자인/기획/CS)",
-    details: [
-      "카페24, 스마트스토어, 아마존 등 플랫폼 운영",
-      "SNS 컨텐츠 기획/제작 및 SNS 운영",
-      "고객 문의 응대 및 서비스 개선",
-    ],
-    img: dogIcon,
-  },
-  {
-    name: "상세페이지 외주 작업",
-    details: [
-      "두루두루 젤리챱 상세페이지 제작",
-      "비티나인 장어진액 상세페이지 제작",
-      "컴피오 검진복 상세페이지 제작",
-    ],
-    img: cartIcon,
-  },
-  {
-    name: "대외활동",
-    details: [
-      "카페24, 스마트스토어, 아마존 등 플랫폼 운영",
-      "SNS 컨텐츠 기획/제작 및 SNS 운영",
-      "고객 문의 응대 및 서비스 개선",
-    ],
-    img: documentIcon,
-  },
-  {
-    name: "그 외 경험해 본 다양한 직무들 ",
-    details: [
-      "카이스트 총동문회 데이터 라벨링 / 메일 템플릿 제작",
-      "모스크바 한국어학당 보조교사",
-      "블라디보스톡 한인회 간사",
-      "패밀리레스토랑 주방장",
-    ],
-    img: companyIcon,
-  },
-];
 
 export default function About() {
   return (
