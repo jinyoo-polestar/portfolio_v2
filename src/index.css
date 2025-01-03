@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .section-layout {
-  @apply flex relative min-h-screen px-1/10 py-14 justify-start font-higilight;
+  @apply flex relative min-h-screen px-1/10 py-14 font-higilight;
 }
 
 .section-title {
