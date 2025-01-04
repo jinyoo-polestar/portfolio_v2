@@ -15,9 +15,16 @@ import reactLogo from "../assets/image/logo_react.svg";
 import scssLogo from "../assets/image/logo_scss.svg";
 import slackLogo from "../assets/image/logo_scss.svg";
 
-export default function About() {
+interface AboutProps {
+  sectionRef: React.RefObject<HTMLDivElement>;
+}
+
+export default function About({ sectionRef }: AboutProps) {
   return (
-    <section className="flex relative h-screen justify-start font-higilight snap-start">
+    <section
+      className="flex relative h-screen justify-start font-higilight snap-start"
+      ref={sectionRef}
+    >
       <aside className="flex flex-col justify-center items-center bg-bluegray w-1/4 rounded-r-3xl gap-3 h-full sticky top-0">
         <img src={nameLogo} className="w-1/2" alt="" />
         <h2 className="text-3xl text-blue font-bold">퍼블리셔 신진유</h2>

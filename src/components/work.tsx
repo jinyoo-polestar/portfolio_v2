@@ -5,9 +5,16 @@ import adlerSampleImg4 from "../assets/image/img_adler_sample_04.png";
 import adlerSampleImg5 from "../assets/image/img_adler_sample_05.png";
 import adlerSampleImg6 from "../assets/image/img_adler_sample_06.png";
 
-export default function Work() {
+interface WorkProps {
+  sectionRef: React.RefObject<HTMLDivElement>;
+}
+
+export default function Work({ sectionRef }: WorkProps) {
   return (
-    <section className="section-layout flex-col border border-y-1 border-gray w-screen">
+    <section
+      className="section-layout flex-col border border-y-1 border-gray w-screen"
+      ref={sectionRef}
+    >
       <h2 className="section-title mb-4">WORK</h2>
       <p className="font-sans">
         3D SNS 서비스를 만든 아들러에서 이런 업무들을 진행했어요

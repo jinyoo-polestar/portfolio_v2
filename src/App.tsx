@@ -1,5 +1,5 @@
 import {
-  Footer,
+  Contact,
   Question,
   Project,
   About,
@@ -7,20 +7,35 @@ import {
   Work,
   Intro,
   Workstyle,
+  Header,
 } from "./components";
 import "./assets/font/font.css";
+import { useRef } from "react";
 
 function App() {
+  const homeRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const workRef = useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className="h-screen overflow-y-scroll snap-mandatory snap-y">
+    <div className="h-screen overflow-y-scroll snap-mandatory snap-y m-0 p-0 w-full overflow-x-hidden">
+      <Header
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        workRef={workRef}
+        projectRef={projectRef}
+        contactRef={contactRef}
+      />
       <Workstyle />
-      <Intro />
-      <About />
-      <Work />
+      <Intro sectionRef={homeRef} />
+      <About sectionRef={aboutRef} />
+      <Work sectionRef={workRef} />
       <Question />
-      <Project />
+      <Project sectionRef={projectRef} />
       <Persona />
-      <Footer />
+      <Contact sectionRef={contactRef} />
     </div>
   );
 }

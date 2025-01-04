@@ -2,9 +2,16 @@ import graphLogo from "../assets/image/ic_graph.svg";
 import emailIcon from "../assets/image/ic_mail_black.svg";
 import phoneIcon from "../assets/image/ic_phone_black.svg";
 
-export default function Footer() {
+interface ContactProps {
+  sectionRef: React.RefObject<HTMLDivElement>;
+}
+
+export default function Contact({ sectionRef }: ContactProps) {
   return (
-    <section className="flex relative flex-col h-screen items-center justify-center font-higilight snap-start">
+    <section
+      className="flex relative flex-col h-screen items-center justify-center font-higilight snap-start"
+      ref={sectionRef}
+    >
       <div className="flex items-center justify-center">
         <div className="text-5xl leading-snug text-right mr-12">
           <p className=" text-blue font-semibold ">디자인과 기술을 이어</p>

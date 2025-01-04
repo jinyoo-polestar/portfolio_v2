@@ -1,7 +1,14 @@
-export default function Intro() {
+interface HomeProps {
+  sectionRef: React.RefObject<HTMLDivElement>;
+}
+
+export default function Intro({ sectionRef }: HomeProps) {
   return (
     <>
-      <div className="section-layout justify-start items-center bg-bluegray gap-[10%]">
+      <div
+        className="section-layout justify-start items-center bg-bluegray gap-[10%]"
+        ref={sectionRef}
+      >
         <div>
           <p className="text-8xl mb-8">🤔</p>
           <h2 className="text-2xl">

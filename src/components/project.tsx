@@ -1,8 +1,15 @@
 import { projectData } from "../data";
 
-export default function Project() {
+interface ProjectProps {
+  sectionRef: React.RefObject<HTMLDivElement>;
+}
+
+export default function Project({ sectionRef }: ProjectProps) {
   return (
-    <section className="flex min-h-screen p-20 flex-col font-higilight bg-bluegray gap-9 snap-start">
+    <section
+      className="flex min-h-screen p-20 flex-col font-higilight bg-bluegray gap-9 snap-start"
+      ref={sectionRef}
+    >
       <h1 className="section-title">MY PROJECT</h1>
       <div className="flex flex-wrap gap-8">
         {projectData.map((item) => (
