@@ -4,7 +4,7 @@ import phoneIcon from "../assets/image/ic_phone_black.svg";
 
 export default function Footer() {
   return (
-    <section className="flex relative flex-col h-screen items-center justify-center font-higilight">
+    <section className="flex relative flex-col h-screen items-center justify-center font-higilight snap-start">
       <div className="flex items-center justify-center">
         <div className="text-5xl leading-snug text-right mr-12">
           <p className=" text-blue font-semibold ">디자인과 기술을 이어</p>

@@ -12,7 +12,7 @@ import "./assets/font/font.css";
 
 function App() {
   return (
-    <div>
+    <div className="h-screen overflow-y-scroll snap-mandatory snap-y">
       <Workstyle />
       <Intro />
       <About />

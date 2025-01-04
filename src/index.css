@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.section-base {
+  @apply snap-start;
+}
+
 .section-layout {
-  @apply flex relative min-h-screen px-1/10 py-14 font-higilight;
+  @apply flex relative min-h-screen px-1/10 py-14 font-higilight snap-start;
 }
 
 .section-title {

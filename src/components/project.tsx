@@ -2,7 +2,7 @@ import { projectData } from "../data";
 
 export default function Project() {
   return (
-    <section className="flex min-h-screen p-20 flex-col font-higilight bg-bluegray gap-9">
+    <section className="flex min-h-screen p-20 flex-col font-higilight bg-bluegray gap-9 snap-start">
       <h1 className="section-title">MY PROJECT</h1>
       <div className="flex flex-wrap gap-8">
         {projectData.map((item) => (

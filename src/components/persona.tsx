@@ -2,7 +2,7 @@ import { personaData } from "../data";
 
 export default function Persona() {
   return (
-    <aside className="flex relative flex-col h-fit justify-start font-higilight p-20 gap-16">
+    <aside className="flex relative flex-col h-fit justify-start font-higilight p-20 gap-16 snap-start">
       <h2 className="section-title">저는 일할 때 이런 모습이예요</h2>
       <div className="flex overflow-x-hidden gap-8 w-full">
         {personaData.map((persona) => (

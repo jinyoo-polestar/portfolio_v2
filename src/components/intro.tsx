@@ -29,8 +29,8 @@ export default function Intro() {
         </div>
       </div>
       <div>
-        <img src="" />
-        <h2>저는 이 다섯 가지를 모두 갖춘 퍼블리셔 신진유 입니다</h2>
+        {/* <img src="" />
+        <h2>저는 이 다섯 가지를 모두 갖춘 퍼블리셔 신진유 입니다</h2> */}
       </div>
     </>
   );

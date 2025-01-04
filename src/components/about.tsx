@@ -17,19 +17,19 @@ import slackLogo from "../assets/image/logo_scss.svg";
 
 export default function About() {
   return (
-    <section className="flex relative h-screen justify-start font-higilight">
+    <section className="flex relative h-screen justify-start font-higilight snap-start">
       <aside className="flex flex-col justify-center items-center bg-bluegray w-1/4 rounded-r-3xl gap-3 h-full sticky top-0">
         <img src={nameLogo} className="w-1/2" alt="" />
         <h2 className="text-3xl text-blue font-bold">퍼블리셔 신진유</h2>
         <p>간단히 저를 소개합니다</p>
       </aside>
-      <article className="flex flex-col w-4/5 h-screen overflow-y-auto snap-mandatory snap-y">
-        <article className="flex flex-col gap-10 p-10 min-h-screen snap-start justify-center">
-          <h3 className="section-title">경력사항</h3>
+      <article className="flex flex-col w-full h-screen overflow-y-auto snap-mandatory snap-y">
+        <article className="flex flex-col gap-4 p-10 min-h-screen snap-start justify-center">
+          <h3 className="section-subtitle">경력사항</h3>
           <div className="flex-wrap flex gap-8">
             {workData.map((work) => (
               <article className="career-card">
-                <img src={work.img} alt={work.name} />
+                <img src={work.img} alt={work.name} className="w-1/5" />
                 <div>
                   <h4 className="text-xl font-bold mb-2">{work.name}</h4>
                   <ul>
