@@ -5,5 +5,6 @@ import About from "./about";
 import Persona from "./persona";
 import Work from "./work";
 import Intro from "./intro";
+import Workstyle from "./workstyle";
 
-export { Footer, Project, Question, About, Persona, Work, Intro };
+export { Footer, Project, Question, About, Persona, Work, Intro, Workstyle };

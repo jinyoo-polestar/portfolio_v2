@@ -18,6 +18,14 @@
   @apply inline-flex font-sans border-gray border rounded-xl p-8 gap-6 w-2/5 hover:border-blue;
 }
 
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
 :root {
   width: 100vw;
   overflow-x: hidden;

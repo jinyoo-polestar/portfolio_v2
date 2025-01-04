@@ -6,18 +6,20 @@ import {
   Persona,
   Work,
   Intro,
+  Workstyle,
 } from "./components";
 import "./assets/font/font.css";
 
 function App() {
   return (
     <div>
+      <Workstyle />
       <Intro />
-      <Work />
-      <Persona />
-      <Question />
       <About />
+      <Work />
+      <Question />
       <Project />
+      <Persona />
       <Footer />
     </div>
   );
