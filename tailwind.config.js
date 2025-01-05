@@ -25,6 +25,11 @@ module.exports = {
     extend: {
       padding: { "1/10": "10%" },
       width: { "9/10": "90%" },
+      gap: { "1/10": "10%", "2/10": "20%", "3/10": "30%" },
+      boxShadow: {
+        gray: "0 4px 6px 0 rgba(0,0,0,0.21)",
+        primary: "0 4px 22px 0 rgba(27,111,255,0.41)",
+      },
     },
   },
   plugins: [],
