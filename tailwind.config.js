@@ -11,11 +11,14 @@ module.exports = {
     colors: {
       blue: "#1B6FFF",
       blue200: "#F2F7FF",
+      blue300: "8BC6EC",
       bluegray: "#F8F9FA",
       white: "#fff",
       black: "#000",
       gray: "#EDEDED",
       gray200: "#535353",
+      purple100: "#92a6e5",
+      purple200: "#8FB2E8",
       gradientpurple: "linear-gradient(#1B6FFF,#F39CFF)",
     },
     fontFamily: {

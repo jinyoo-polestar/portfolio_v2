@@ -20,7 +20,8 @@ function App() {
   const contactRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="h-screen overflow-y-scroll snap-mandatory snap-y m-0 p-0 w-full overflow-x-hidden">
+    <div className="m-0 p-0 w-full ">
+      {/* <div className="h-screen overflow-y-scroll snap-mandatory snap-y m-0 p-0 w-full overflow-x-hidden"> */}
       <Header
         homeRef={homeRef}
         aboutRef={aboutRef}
@@ -29,7 +30,7 @@ function App() {
         contactRef={contactRef}
       />
       <Workstyle />
-      <Intro sectionRef={homeRef} />
+      {/* <Intro sectionRef={homeRef} /> */}
       <About sectionRef={aboutRef} />
       <Work sectionRef={workRef} />
       <Question />
