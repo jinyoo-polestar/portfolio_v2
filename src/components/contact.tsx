@@ -5,17 +5,17 @@ interface ContactProps {
 export default function Contact({ sectionRef }: ContactProps) {
   return (
     <section
-      className="relative  items-center section-layout gap-x-1/10"
+      className="relative flex-row flex-wrap items-center section-layout justify-start gap-1/10"
       ref={sectionRef}
     >
-      <div className="flex flex-col gap-4 ">
+      <div className="flex flex-col gap-4">
         <i className="text-7xl">👀</i>
-        <p className="text-4xl font-extralight leading-snug">
+        <p className="text-4xl font-extralight break-keep leading-snug xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl">
           혹시..
           <br />
           <b className="font-semibold">저에 대해 더 알고싶지 않으신가요?</b>
         </p>
-        <p className=" text-gray200 font-regular text-md ">
+        <p className=" text-gray200 font-regular text-md break-keep">
           전문성을 가진 퍼블리셔로서, 그리고 든든한 동료로서 멋진 프로젝트를
           함께 해내고 싶습니다.
           <br /> 가벼운 커피챗도 좋고, 면접을 통해 만나뵙는 것도 환영합니다.
