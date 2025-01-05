@@ -1,4 +1,8 @@
-import { projectData } from "../data";
+import adlerLogo from "../assets/image/ic_adler.svg";
+import matzipdlerLogo from "../assets/image/ic_matzipdler.svg";
+import portfolioLogo from "../assets/image/ic_portfolio.svg";
+import netflixLogo from "../assets/image/ic_netflix.svg";
+import detailpageLogo from "../assets/image/ic_detailpage.svg";
 
 interface ProjectProps {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -6,40 +10,125 @@ interface ProjectProps {
 
 export default function Project({ sectionRef }: ProjectProps) {
   return (
-    <section
-      className="flex min-h-screen p-20 flex-col font-higilight bg-bluegray gap-9 snap-start"
-      ref={sectionRef}
-    >
-      <h1 className="section-title">MY PROJECT</h1>
-      <div className="flex flex-wrap gap-8">
-        {projectData.map((item) => (
-          <article className="inline-flex flex-col w-1/4 bg-white p-4 rounded-lg gap-6 relative max-w-90">
-            <img src={item.logo} className="w-14" alt={item.title} />
-            <h2 className="text-3xl tracking-wide">{item.title}</h2>
-            <div className="inline-flex gap-1">
-              {item.tags.map((tag) => {
-                return (
-                  <p className="bg-gray text-xs py-1 px-3 rounded-2xl">{tag}</p>
-                );
-              })}
-            </div>
-            <div>
-              {item.tools.map((tool) => {
-                return (
-                  <img
-                    src={tool.src}
-                    className="float-left mr-2 h-6"
-                    alt={tool.alt}
-                  />
-                );
-              })}
-            </div>
-            <p className="absolute right-5 top-5 py-2 px-3 bg-bluegray text-xs border border-gray">
-              {item.type}
+    <section className="section-layout flex-col bg-bluegray" ref={sectionRef}>
+      <h1 className="section-title mb-4">MY PROJECT</h1>
+      <div className="flex flex-wrap gap-x-10 gap-y-4">
+        <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-80 cursor-pointer xl:w-3/12 lg:w-3/12 md:w-5/12 sm:w-full">
+          <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#FFE8F1]">
+            <img src={adlerLogo} className="" />
+            <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
+              🪄 퍼블리싱 기여도 100%
+            </span>
+          </div>
+          <div className="p-6 pb-4">
+            <h2 className="font-medium text-2xl tracking-wide mb-3">Adler</h2>
+            <p className="text-gray200 font-regular text-sm break-keep">
+              3D SNS 서비스 "아들러"의 프론트엔드 개발과 퍼블리싱을 담당했어요
             </p>
-            <button className="absolute right-5 bottom-5 bg-[url('src/assets/image/ic_more_black.svg')] w-8 h-8 bg-cover cursor-pointer" />
+            <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
+          </div>
+        </article>
+        <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-80 cursor-pointer xl:w-3/12 lg:w-3/12 md:w-5/12 sm:w-full">
+          <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#000]">
+            <img src={netflixLogo} className="" />
+            <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
+              🪄 퍼블리싱 기여도 100%
+            </span>
+          </div>
+          <div className="p-6 pb-4">
+            <h2 className="font-medium text-2xl tracking-wide mb-3">Netflix</h2>
+            <p className="text-gray200 font-regular text-sm break-keep">
+              넷플릭스 랜딩 페이지를 클론 코딩하며, 반응형 디자인과 UI 구현을
+              중심으로 진행한 프로젝트입니다
+            </p>
+            <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
+          </div>
+        </article>
+        <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-80 cursor-pointer xl:w-3/12 lg:w-3/12 md:w-5/12 sm:w-full">
+          <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#FFE8D7]">
+            <img src={portfolioLogo} className="" />
+            <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
+              🪄 퍼블리싱 기여도 100%
+            </span>
+          </div>
+          <div className="p-6 pb-4">
+            <h2 className="font-medium text-2xl tracking-wide mb-3">
+              포트폴리오 v1
+            </h2>
+            <p className="text-gray200 font-regular text-sm break-keep">
+              SCSS와 jQuery를 활용해 개인 프로젝트를 진행하며 UI와 스타일
+              모듈화를 구현했어요
+            </p>
+            <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
+          </div>
+        </article>
+        <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-80 cursor-pointer xl:w-3/12 lg:w-3/12 md:w-5/12 sm:w-full">
+          <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#FFDDAD]">
+            <img src={matzipdlerLogo} className="" />
+            <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
+              🪄 퍼블리싱 기여도 100%
+            </span>
+          </div>
+          <div className="p-6 pb-4">
+            <h2 className="font-medium text-2xl tracking-wide mb-3">
+              맛집들러
+            </h2>
+            <p className="text-gray200 font-regular text-sm break-keep">
+              사내 프로젝트로 회사 근처 점심 맛집 추천 서비스 "맛집들러"의
+              퍼블리싱을 맡았어요
+            </p>
+            <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
+          </div>
+        </article>
+        <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-80 cursor-pointer xl:w-3/12 lg:w-3/12 md:w-5/12 sm:w-full">
+          <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#D3EDBF]">
+            <img src={detailpageLogo} className="" />
+            <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
+              🎨 디자인 기여도 100%
+            </span>
+          </div>
+          <div className="p-6 pb-4">
+            <h2 className="font-medium text-2xl tracking-wide mb-3">
+              상세페이지
+            </h2>
+            <p className="text-gray200 font-regular text-sm break-keep">
+              효과적인 컨텐츠 전달을 위한 상세페이지 기획과 디자인 작업을
+              진행했어요
+            </p>
+            <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
+          </div>
+        </article>
+        <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-80 cursor-pointer xl:w-3/12 lg:w-3/12 md:w-5/12 sm:w-full">
+          <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#FFE8D7]">
+            <img src={portfolioLogo} className="" />
+          </div>
+          <div className="p-6 pb-4">
+            <h2 className="font-medium text-2xl tracking-wide mb-3">
+              포트폴리오 v2
+            </h2>
+            <p className="text-gray200 font-regular text-sm break-keep">
+              React와 Tailwind를 사용하여 포트폴리오 웹사이트를 제작했어요
+            </p>
+            <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
+          </div>
+        </article>
+
+        {/* {projectData.map((item) => (
+          <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-60">
+            <div
+              className={`p-6 flex items-center justify-center rounded-t-md h-2/3 bg-${item.bgColor}`}
+            >
+              <img src={item.logo} className="" alt={item.title} />
+            </div>
+            <div className="p-6 pb-4">
+              <h2 className="font-medium text-2xl tracking-wide mb-3">
+                {item.title}
+              </h2>
+              <p className="text-gray200 font-regular">subtitle</p>
+              <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover" />
+            </div>
           </article>
-        ))}
+        ))} */}
       </div>
     </section>
   );

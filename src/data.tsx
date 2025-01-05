@@ -132,6 +132,7 @@ export const projectData = [
   {
     title: "ADLER",
     logo: adlerLogo,
+    bgColor: "#FFE8F1",
     tags: ["프론트엔드 개발", "퍼블리싱", "기획"],
     tools: [
       { src: htmlLogo, alt: "html" },
@@ -148,6 +149,7 @@ export const projectData = [
   {
     title: "맛집들러",
     logo: matzipdlerLogo,
+    bgColor: "#FFDDAD",
     tags: ["프론트엔드 개발", "퍼블리싱", "기획", "디자인"],
     tools: [
       { src: htmlLogo, alt: "html" },
@@ -162,6 +164,7 @@ export const projectData = [
   {
     title: "포트폴리오 v1",
     logo: portfolioIcon,
+    bgColor: "",
     tags: ["퍼블리싱", "기획", "디자인"],
     tools: [
       { src: htmlLogo, alt: "html" },
@@ -176,6 +179,7 @@ export const projectData = [
   {
     title: "포트폴리오 v2",
     logo: portfolioIcon,
+    bgColor: "#",
     tags: ["퍼블리싱", "기획", "디자인"],
     tools: [
       { src: htmlLogo, alt: "html" },
@@ -189,6 +193,7 @@ export const projectData = [
   {
     title: "넷플릭스 클론 코딩",
     logo: netflixIcon,
+    bgColor: "#000",
     tags: ["퍼블리싱"],
     tools: [
       { src: htmlLogo, alt: "html" },
@@ -200,6 +205,7 @@ export const projectData = [
   {
     title: "상세페이지",
     logo: detailpageIcon,
+    bgColor: "#D3EDBF",
     tags: ["기획", "디자인"],
     tools: [
       { src: figmaLogo, alt: "figma" },

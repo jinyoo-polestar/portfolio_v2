@@ -10,12 +10,12 @@ export default function Workstyle() {
       <h2 className="section-title mb-24 font-higilight">
         퍼블리셔로서 저는 이런 모습이예요
       </h2>
-      <div className="font-sans relative flex flex-col gap-10 items-center xl:w-2/3 md:w-10/12 sm:w-full">
-        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full sm:flex-col ">
-          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg sm:w-full">
+      <div className="font-sans relative flex flex-row flex-wrap gap-10 items-center xl:w-2/3 lg:w-2/3 md:w-full sm:w-full">
+        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg w-8/12 xl:w-8/12 lg:w-8/12 md:w-full sm:w-full ">
             <img src={deviceIcon} className="h-1/2" />
           </div>
-          <div className="w-7/12 sm:w-full">
+          <div className="w-full">
             <h3 className="mb-4 font-bold text-xl">웹 접근성을 고려한 개발</h3>
             <p className="text-gray200 break-keep">
               모든 사용자가 제약 없이 웹에 접근할 수 있도록 세심한 디테일을 신경
@@ -26,8 +26,8 @@ export default function Workstyle() {
             </p>
           </div>
         </article>
-        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full sm:flex-col ">
-          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg sm:w-full">
+        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg w-8/12 xl:w-8/12 lg:w-8/12 md:w-full sm:w-full ">
             <img src={pencilIcon} className="h-1/2" />
           </div>
           <div className="w-7/12 sm:w-full">
@@ -44,8 +44,8 @@ export default function Workstyle() {
             </p>
           </div>
         </article>
-        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full sm:flex-col ">
-          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg sm:w-full">
+        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg w-8/12 xl:w-8/12 lg:w-8/12 md:w-full sm:w-full ">
             <img src={chatIcon} className="h-1/2" />
           </div>
           <div className="w-7/12 sm:w-full">
@@ -60,8 +60,8 @@ export default function Workstyle() {
             </p>
           </div>
         </article>
-        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full sm:flex-col ">
-          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg sm:w-full">
+        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg w-8/12 xl:w-8/12 lg:w-8/12 md:w-full sm:w-full ">
             <img src={wheelIcon} className="h-1/2" />
           </div>
           <div className="w-7/12 sm:w-full">
@@ -78,8 +78,8 @@ export default function Workstyle() {
             </p>
           </div>
         </article>
-        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full sm:flex-col ">
-          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg sm:w-full">
+        <article className="flex bg-white rounded-lg p-6 gap-10 items-center w-full xl:flex-row lg:flex-row md:flex-col sm:flex-col">
+          <div className="bg-bluegray inline-flex items-center justify-center aspect-video rounded-lg w-8/12 xl:w-8/12 lg:w-8/12 md:w-full sm:w-full ">
             <img src={documentIcon} className="h-1/2" />
           </div>
           <div className="w-7/12 sm:w-full">
