@@ -6,7 +6,7 @@ import companyIcon from "../src/assets/image/ic_company.svg";
 import bookIcon from "../src/assets/image/ic_book.svg";
 import cycloneIcon from "../src/assets/image/ic_cyclone.svg";
 import gearIcon from "../src/assets/image/ic_gear.svg";
-import glassIcon from "../src/assets/image/ic_glass.svg";
+import graphIcon from "../src/assets/image/ic_graph.svg";
 import heartIcon from "../src/assets/image/ic_heart.svg";
 import microphoneIcon from "../src/assets/image/ic_microphone.svg";
 import rockhandIcon from "../src/assets/image/ic_rockhand.svg";
@@ -34,48 +34,36 @@ export const personaData = [
     img: microphoneIcon,
     title: "다른 사람들과 어울리고 소통하는 것을 좋아해요",
     desc: "다양한 팀원들과 아이디어를 나누고 소통을 통해 문제를 해결해나갈때 보람을 느낍니다.\n\n대화와 협업으로 더 나은 결과를 만드는것을 중요하게 생각합니다.",
-    bgColor: "#DBDBDB",
   },
   {
     img: rockhandIcon,
     title: "책임감이 강해요",
     desc: "처음 해보는 어려운 일이여도 맡은 일은 끝까지 최선을 다해 해냅니다.\n\n목표가 있으면 방법을 찾아내기 위해 끊임없이 시도하고, 더 나은 결과를 만들어냅니다.",
-    bgColor: "#FFFEE6",
-    textColor: "#FFAA00",
   },
   {
     img: heartIcon,
     title: "언제나 열정적으로 일해요",
-    desc: "퍼블리셔 라는 직무에 대한 애정을 바탕으로, 항상 열정을 가지고 퍼블리싱에 몰입하며,이 열정을 원동력으로 삼아 끊임없이 성장합니다.",
-    bgColor: "#FFE4E7",
-    textColor: "#FF5E9C",
+    desc: "퍼블리싱 업무 외에도 주어진 모든 일에 열정을 쏟으며, 적극적으로 해결책을 찾아냅니다.",
   },
   {
     img: writinghandIcon,
     title: "일처리가 꼼꼼해요",
     desc: "사소한 디테일에도 신경을 쓰며, 어떤 일이든 꼼꼼하게 살펴 퀄리티를 높이는 데 집중합니다. 항상 작은 부분까지 놓치지 않고 높은 완성도의 결과물을 제공합니다.",
-    bgColor: "#FEF1EC",
-    textColor: "#FF815C",
   },
   {
-    img: bookIcon,
-    title: "꾸준히 학습하며 성장해요",
-    desc: "더 나은 퍼블리셔이자 동료가 되기 위해 끊임없이 학습하며, 현재에 안주하지 않고 성장해 나갑니다.",
-    bgColor: "#E3EDFF",
-    textColor: "#1B6FFF",
+    img: graphIcon,
+    title: "목표지향적이에요",
+    desc: "우선순위 설정, 시간 관리, 그리고 원활한 커뮤니케이션을 통해 목표를 향해 효율적으로 나아갑니다. 항상 명확한 계획을 세워 일을 진행하며, 최종 목표를 달성하기 위해 집중합니다.",
   },
   {
     img: gearIcon,
     title: "효율적으로 일해요",
-    desc: "업무를 진행할때, 항상 더 나은 방법을 고민하고 실행합니다. 변화와 도전을 두려워하지 않고 창의적인 접근 방식을 시도해 효율적으로 일하는 편입니다.\n\n효율을 통해 팀의 성과와 목표 달성에 기여하는것을 중요하게 생각합니다.",
-    bgColor: "#F8F9FA",
+    desc: "업무를 진행할때, 항상 더 나은 방법을 고민하고 실행합니다.\n\n효율을 통해 팀의 성과와 목표 달성에 기여하는것을 좋아합니다.",
   },
   {
     img: cycloneIcon,
-    title: "습득력이 빨라요",
-    desc: "새로운 지식이나 기술을 빠르게 이해하고 적용하며, 변화하는 환경에도 보다 능숙하게 적응합니다.\n\n이 능력을 바탕으로 업무의 속도와 퀄리티를 모두 높이는데 기여합니다.",
-    bgColor: "#E3E8F8",
-    textColor: "#1B3DFF",
+    title: "업무처리 속도가 빨라요",
+    desc: "업무를 빠르게 처리하고, 기한을 놓치지 않습니다. 일을 신속하게 끝내는 데 능숙합니다.",
   },
 ];
 
