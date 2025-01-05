@@ -3,7 +3,6 @@ import dogIcon from "../src/assets/image/ic_dog.svg";
 import cartIcon from "../src/assets/image/ic_cart.svg";
 import documentIcon from "../src/assets/image/ic_document.svg";
 import companyIcon from "../src/assets/image/ic_company.svg";
-import bookIcon from "../src/assets/image/ic_book.svg";
 import cycloneIcon from "../src/assets/image/ic_cyclone.svg";
 import gearIcon from "../src/assets/image/ic_gear.svg";
 import graphIcon from "../src/assets/image/ic_graph.svg";
