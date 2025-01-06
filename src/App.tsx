@@ -29,9 +29,8 @@ function App() {
         projectRef={projectRef}
         contactRef={contactRef}
       />
-      <Workstyle />
-      {/* <Intro sectionRef={homeRef} /> */}
       <About sectionRef={aboutRef} />
+      <Workstyle />
       <Work sectionRef={workRef} />
       <Question />
       <Project sectionRef={projectRef} />

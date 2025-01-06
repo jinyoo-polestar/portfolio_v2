@@ -11,15 +11,19 @@
 }
 
 .section-title {
-  @apply text-4xl text-blue font-bold tracking-widest sm:text-3xl;
+  @apply text-4xl text-blue tracking-widest sm:text-3xl md:text-4xl;
 }
 
 .section-subtitle {
-  @apply text-3xl text-blue font-semibold mb-4;
+  @apply text-3xl text-blue font-semibold sm:text-2xl md:text-3xl;
 }
 
 .career-card {
-  @apply inline-flex font-sans border-gray border rounded-xl p-8 gap-6 w-2/5 hover:border-blue;
+  @apply flex font-sans p-5 gap-4 w-[32%] sm:w-full sm:flex-col md:flex-row md:w-[32%] sm:p-1 md:p-5;
+}
+
+.about-card {
+  @apply flex flex-col font-sans p-5 gap-6 w-[32%] sm:w-full md:w-[32%] sm:p-4 md:p-5;
 }
 
 .hide-scrollbar {
