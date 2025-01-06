@@ -25,6 +25,9 @@ module.exports = {
       higilight: ["Paperlogy", "Pretendard", "sans-serif"],
     },
     extend: {
+      colors: {
+        blackTransparent: "rgba(0, 0, 0, 0.75)",
+      },
       padding: { "1/10": "10%" },
       width: { "9/10": "90%", 800: "800%" },
       gap: { "1/10": "10%", "2/10": "20%", "3/10": "30%" },

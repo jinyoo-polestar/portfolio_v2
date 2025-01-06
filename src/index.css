@@ -22,14 +22,6 @@
   @apply flex flex-col font-sans p-5 gap-6 w-[32%] sm:w-full md:w-[32%] sm:p-4 md:p-5;
 }
 
-.hide-scrollbar {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-}
-.hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
-
 :root {
   width: 100vw;
   overflow-x: hidden;

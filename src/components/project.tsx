@@ -3,6 +3,7 @@ import matzipdlerLogo from "../assets/image/ic_matzipdler.svg";
 import portfolioLogo from "../assets/image/ic_portfolio.svg";
 import netflixLogo from "../assets/image/ic_netflix.svg";
 import detailpageLogo from "../assets/image/ic_detailpage.svg";
+import shinhanLogo from "../assets/image/ic_shinhan.svg";
 
 interface ProjectProps {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -17,7 +18,7 @@ export default function Project({ sectionRef }: ProjectProps) {
           <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#FFE8F1]">
             <img src={adlerLogo} className="" />
             <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
-              🪄 퍼블리싱 기여도 100%
+              👩🏻‍💻 퍼블리싱 기여도 100%
             </span>
           </div>
           <div className="p-6 pb-4">
@@ -32,7 +33,7 @@ export default function Project({ sectionRef }: ProjectProps) {
           <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#000]">
             <img src={netflixLogo} className="" />
             <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
-              🪄 퍼블리싱 기여도 100%
+              👩🏻‍💻 퍼블리싱 기여도 100%
             </span>
           </div>
           <div className="p-6 pb-4">
@@ -48,7 +49,7 @@ export default function Project({ sectionRef }: ProjectProps) {
           <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#FFE8D7]">
             <img src={portfolioLogo} className="" />
             <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
-              🪄 퍼블리싱 기여도 100%
+              👩🏻‍💻 퍼블리싱 기여도 100%
             </span>
           </div>
           <div className="p-6 pb-4">
@@ -66,7 +67,7 @@ export default function Project({ sectionRef }: ProjectProps) {
           <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#FFDDAD]">
             <img src={matzipdlerLogo} className="" />
             <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
-              🪄 퍼블리싱 기여도 100%
+              👩🏻‍💻 퍼블리싱 기여도 100%
             </span>
           </div>
           <div className="p-6 pb-4">
@@ -98,37 +99,24 @@ export default function Project({ sectionRef }: ProjectProps) {
             <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
           </div>
         </article>
-        <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-80 cursor-pointer xl:w-3/12 lg:w-3/12 md:w-5/12 sm:w-full">
-          <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#FFE8D7]">
-            <img src={portfolioLogo} className="" />
+        <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-80 cursor-not-allowed xl:w-3/12 lg:w-3/12 md:w-5/12 sm:w-full">
+          <div className="p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[#DFE8FF]">
+            <img src={shinhanLogo} className="" />
           </div>
           <div className="p-6 pb-4">
             <h2 className="font-medium text-2xl tracking-wide mb-3">
-              포트폴리오 v2
+              신한금융그룹
             </h2>
             <p className="text-gray200 font-regular text-sm break-keep">
-              React와 Tailwind를 사용하여 포트폴리오 웹사이트를 제작했어요
+              React와 Tailwind를 사용해 신한금융그룹 웹사이트를 클론코딩 하고
+              있어요
             </p>
             <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
           </div>
+          <div className="absolute w-full h-full rounded-lg bg-blackTransparent text-white flex justify-center items-center font-bold text-lg">
+            작업중이예요 🛠️
+          </div>
         </article>
-
-        {/* {projectData.map((item) => (
-          <article className="inline-flex flex-col w-3/12 bg-white rounded-lg relative h-60">
-            <div
-              className={`p-6 flex items-center justify-center rounded-t-md h-2/3 bg-${item.bgColor}`}
-            >
-              <img src={item.logo} className="" alt={item.title} />
-            </div>
-            <div className="p-6 pb-4">
-              <h2 className="font-medium text-2xl tracking-wide mb-3">
-                {item.title}
-              </h2>
-              <p className="text-gray200 font-regular">subtitle</p>
-              <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover" />
-            </div>
-          </article>
-        ))} */}
       </div>
     </section>
   );
