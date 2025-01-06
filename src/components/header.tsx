@@ -27,7 +27,7 @@ export default function Header({
   };
 
   return (
-    <nav className="fixed w-full h-20 bg-white z-10 flex py-2 px-1/10 items-center justify-between border border-gray border-b-1 sm:h-16">
+    <nav className="fixed w-full h-20 backdrop-blur-2xl z-20 flex py-2 px-1/10 items-center justify-between border-gray border-b sm:h-16">
       <img src={nameLogo} className="h-3/5" alt="로고" />
       <div className="inline-flex items-center gap-10">
         <ul className="flex gap-10 cursor-pointer text-gray200 sm:hidden md:flex">

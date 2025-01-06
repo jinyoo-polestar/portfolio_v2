@@ -6,7 +6,7 @@ import wheelIcon from "../assets/image/ic_wheel.png";
 
 export default function Workstyle() {
   return (
-    <section className="section-layout bg-gradient-to-b from-[rgba(255,255,255,0.8)] from-20% via-[rgba(143,178,232,0.5)] from-56% to-[rgba(139,198,236,0.4)] flex-col items-center relative justify-center">
+    <section className="section-layout bg-gradient-to-b from-[rgba(255,255,255,0.8)] from-20% via-[rgba(143,178,232,0.5)] from-56% to-[rgba(139,198,236,0.4)] flex-col relative justify-center">
       <h2 className="section-title mb-24 font-higilight">
         퍼블리셔로서 저는 이런 모습이예요
       </h2>

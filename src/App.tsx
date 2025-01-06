@@ -1,6 +1,6 @@
+import { useRef } from "react";
 import {
   Contact,
-  Question,
   Project,
   About,
   Persona,
@@ -10,7 +10,6 @@ import {
   Header,
 } from "./components";
 import "./assets/font/font.css";
-import { useRef } from "react";
 
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -21,7 +20,6 @@ function App() {
 
   return (
     <div className="m-0 p-0 w-full">
-      {/* <div className="h-screen overflow-y-scroll snap-mandatory snap-y m-0 p-0 w-full overflow-x-hidden"> */}
       <Header
         homeRef={homeRef}
         aboutRef={aboutRef}
@@ -29,12 +27,12 @@ function App() {
         projectRef={projectRef}
         contactRef={contactRef}
       />
+      <Intro sectionRef={homeRef} />
       <About sectionRef={aboutRef} />
-      <Workstyle />
       <Work sectionRef={workRef} />
-      <Question />
       <Project sectionRef={projectRef} />
       <Persona />
+      <Workstyle />
       <Contact sectionRef={contactRef} />
     </div>
   );

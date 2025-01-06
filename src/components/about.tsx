@@ -13,6 +13,7 @@ import photoshopLogo from "../assets/image/logo_photoshop.svg";
 import reactLogo from "../assets/image/logo_react.svg";
 import scssLogo from "../assets/image/logo_scss.svg";
 import slackLogo from "../assets/image/logo_slack.svg";
+import codeLogo from "../assets/image/ic_3d_code.png";
 
 interface AboutProps {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -21,21 +22,15 @@ interface AboutProps {
 export default function About({ sectionRef }: AboutProps) {
   return (
     <section
-      className="flex justify-start sm:flex-col md:flex-row"
+      className="flex relative min-h-screen pb-20 border-b border-gray"
       ref={sectionRef}
     >
-      <article className="flex flex-col w-full relative">
-        <div className="flex h-screen w-full flex-wrap justify-start items-center gap-x-1/10">
-          <div className="relative overflow-hidden  h-full inline-flex justify-center items-center text-white sm:h-2/5 sm:text-3xl sm:w-full md:h-full md:w-4/12 md:text-4xl sm:leading-relaxed md:leading-relaxed">
-            <h2 className="font-extrabold text-4xl z-10 ">
-              웹사이트의 퀄리티를 <br /> 최상으로 끌어올리는 <br />
-              퍼블리셔 신진유입니다
-            </h2>
-            <div className="absolute w-800 aspect-square top-[100%] bg-wavebg2 rounded-[38%] animate-wave2 transform"></div>
-            <div className="absolute w-800 animate-wave transform top-[100%] rounded-[38%] aspect-square bg-wavebg"></div>
+      <article className="flex flex-col">
+        <div className="flex h-screen w-full items-center border border-gray sm:flex-col md:flex-row sm:h-fit md:h-screen">
+          <div className="h-full flex justify-center items-center sm:h-1/2 sm:w-full md:h-full md:w-5/12 bg-blue200">
+            <img src={codeLogo} className="w-2/3" />
           </div>
-
-          <div className="text-lg leading-relaxed break-keep w-full sm:w-full sm:p-6 md:w-2/5">
+          <div className="text-lg leading-relaxed break-keep w-3/5 p-20 sm:p-0 sm:mt-10 md:p-20 sm:w-4/5 md:w-3/5">
             안녕하세요!
             <br />
             <b>디테일과 완성도를 중시</b>하며, 사용자 경험(UX)과 최적화를 통해
@@ -48,7 +43,7 @@ export default function About({ sectionRef }: AboutProps) {
             트렌디하고 기능적인 결과물을 만드려고 노력합니다.
           </div>
         </div>
-        <article className="section-layout flex-row gap-4 flex-wrap justify-center">
+        <article className="flex px-1/10 py-20 flex-row gap-4 flex-wrap justify-center">
           <div className="flex flex-col border border-gray rounded-xl p-8">
             <h3 className="section-subtitle font-higilight mb-6">경력사항</h3>
             <div className="flex-wrap flex gap-2">

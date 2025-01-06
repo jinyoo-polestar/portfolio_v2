@@ -2,12 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.section-base {
-  @apply snap-start;
-}
-
 .section-layout {
-  @apply flex relative min-h-screen px-1/10 pt-32 pb-20 snap-start;
+  @apply flex relative min-h-screen px-1/10 py-20 border-b border-gray;
 }
 
 .section-title {

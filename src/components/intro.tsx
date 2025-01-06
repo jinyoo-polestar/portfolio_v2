@@ -1,44 +1,22 @@
+import nameLogo from "../assets/image/logo_name_white.svg";
+
 interface HomeProps {
   sectionRef: React.RefObject<HTMLDivElement>;
 }
 
 export default function Intro({ sectionRef }: HomeProps) {
   return (
-    <>
-      <div
-        className="section-layout justify-start items-center bg-bluegray gap-[10%]"
-        ref={sectionRef}
-      >
-        <div>
-          <p className="text-8xl mb-8">🤔</p>
-          <h2 className="text-2xl">
-            혹시..
-            <br />
-            이런 퍼블리셔 찾고 계시지 않나요?
-          </h2>
-        </div>
-        <div className="flex flex-col gap-4 font-sans text-blue font-bold text-xl">
-          <p className="px-6 py-2 border border-blue rounded-3xl bg-white">
-            👩🏻‍💻 웹접근성, 웹표준, 반응형 등 알짝딱깔센으로 잘 신경쓰면 좋겠어요
-          </p>
-          <p className="px-6 py-2 border border-blue rounded-3xl bg-white">
-            🔎 꼼꼼하게 디테일한 부분까지 놓치지 않았으면 좋겠어요
-          </p>
-          <p className="px-6 py-2 border border-blue rounded-3xl bg-white">
-            🫱🏻 동료들과 커뮤니케이션이 잘 되고 회사에 잘 스며들었으면 좋겠어요
-          </p>
-          <p className="px-6 py-2 border border-blue rounded-3xl bg-white">
-            🔥 넘쳐나는 열정으로 어떤 일이든 적극적으로 임하면 좋겠어요
-          </p>
-          <p className="px-6 py-2 border border-blue rounded-3xl bg-white">
-            ☄️ 새로운 기술, 툴을 빠르게 습득하고 적용하면 좋겠어요
-          </p>
-        </div>
-      </div>
-      <div>
-        {/* <img src="" />
-        <h2>저는 이 다섯 가지를 모두 갖춘 퍼블리셔 신진유 입니다</h2> */}
-      </div>
-    </>
+    <div
+      className="section-layout relative flex-col justify-center items-center gap-10 overflow-hidden"
+      ref={sectionRef}
+    >
+      <div className="absolute w-[500%] aspect-square top-[90%] rounded-[38%] animate-wave bg-wavebg -z-0"></div>
+      <img src={nameLogo} className="z-10" />
+      <h2 className="font-bold font-higilight text-4xl z-10 leading-[4rem] text-center text-blue200 break-keep sm:text-3xl md:text-4xl">
+        <b>웹사이트의 퀄리티를 최상으로 끌어올리는</b>
+        <br />
+        퍼블리셔 신진유입니다
+      </h2>
+    </div>
   );
 }
