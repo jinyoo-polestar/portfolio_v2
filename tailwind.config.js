@@ -58,6 +58,9 @@ module.exports = {
       animation: {
         wave: "wave 6s linear forwards",
       },
+      listStyleType: {
+        bar: "square",
+      },
     },
   },
   plugins: [],

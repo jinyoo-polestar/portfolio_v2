@@ -35,7 +35,7 @@ export default function Contact({ sectionRef }: ContactProps) {
             </p>
           </a>
         </address>
-        <a href="#">
+        <a href="https://open.kakao.com/o/s4CSp08g" target="_blank">
           <p className=" py-3 px-6 rounded-lg shadow-gray mb-6 hover:shadow-primary">
             <i className="mr-4">💬</i>
             카카오톡 오픈채팅방
