@@ -1,7 +1,6 @@
 import adlerSampleImg1 from "../assets/image/img_adler_sample_01.png";
 import adlerSampleImg2 from "../assets/image/img_adler_sample_02.png";
 import adlerSampleImg3 from "../assets/image/img_adler_sample_03.png";
-import adlerSampleImg4 from "../assets/image/img_adler_sample_04.png";
 import adlerSampleImg5 from "../assets/image/img_adler_sample_05.png";
 import adlerSampleImg6 from "../assets/image/img_adler_sample_06.png";
 

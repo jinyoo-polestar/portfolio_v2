@@ -7,7 +7,7 @@ export default function Persona() {
         저는 일할 때 이런 모습이예요
       </h2>
       <div className="flex flex-wrap w-full">
-        {personaData.map((persona) => (
+        {personaData.map((persona, _key) => (
           <article className="inline-flex group relative flex-col p-5 justify-between gap-4 items-start w-1/3 border-t border-gray cursor-default hover:border-black hover:bg-blue200 sm:w-1/2 md:w-1/3">
             <h3 className="text-2xl font-bold break-keep text-gray200 w-3/5 sm:w-full md:w-3/5 group-hover:text-black group-hover:font-higilight">
               {persona.title}

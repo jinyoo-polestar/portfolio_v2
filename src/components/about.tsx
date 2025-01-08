@@ -47,7 +47,7 @@ export default function About({ sectionRef }: AboutProps) {
           <div className="flex flex-col border border-gray rounded-xl p-8">
             <h3 className="section-subtitle font-higilight mb-6">경력사항</h3>
             <div className="flex-wrap flex gap-2">
-              {workData.map((work) => (
+              {workData.map((work, _key) => (
                 <article className="career-card">
                   <img src={work.img} alt={work.name} className="w-16" />
                   <div>
