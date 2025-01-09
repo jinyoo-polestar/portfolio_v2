@@ -340,6 +340,20 @@ export default function Modal({
               </article>
               <article className="flex flex-col border-b py-8 border-gray">
                 <h5 className="font-black text-xl mb-4">결과물</h5>
+                <a
+                  href="https://github.com/jinyoo-polestar/portfolio-netflix"
+                  target="_blank"
+                  className="px-2 py-2 rounded-md font-medium border border-gray text-gray200 mr-3"
+                >
+                  코드 확인하기
+                </a>
+                <a
+                  href="https://netfl-clone-project.netlify.app/"
+                  target="_blank"
+                  className="px-2 py-2 rounded-md font-medium border border-gray text-gray200"
+                >
+                  사이트 보러가기
+                </a>
                 <div className="flex rounded-md items-start gap-4">
                   <img
                     src={netflixPCImage}
@@ -472,6 +486,22 @@ export default function Modal({
               </article>
               <article className="flex flex-col border-b py-8 border-gray">
                 <h5 className="font-black text-xl mb-4">결과물</h5>
+                <div className="mb-4">
+                  <a
+                    href="https://github.com/jinyoo-polestar/portfolio"
+                    target="_blank"
+                    className="px-2 py-2 rounded-md font-medium border border-gray text-gray200 mr-3"
+                  >
+                    코드 확인하기
+                  </a>
+                  <a
+                    href="https://jinyoo-portfolio.netlify.app/"
+                    target="_blank"
+                    className="px-2 py-2 rounded-md font-medium border border-gray text-gray200"
+                  >
+                    사이트 보러가기
+                  </a>
+                </div>
                 <div className="flex rounded-md items-start gap-4">
                   <img
                     src={portfolioPCImage}
