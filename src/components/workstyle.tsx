@@ -19,7 +19,7 @@ export default function Workstyle() {
             <h3 className="mb-4 font-bold text-xl">웹 접근성을 고려한 개발</h3>
             <p className="text-gray200 break-keep">
               모든 사용자가 제약 없이 웹에 접근할 수 있도록 세심한 디테일을 신경
-              씁니다.{" "}
+              씁니다.
               <b>시맨틱 태그, alt 속성, meta 태그, 반응형 디자인 등을 활용</b>
               하여 웹 페이지의 구조와 내용을 명확하게 전달하며, SEO 최적화에도
               신경을 기울입니다.
