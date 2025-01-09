@@ -87,7 +87,7 @@ export default function Project({ sectionRef }: ProjectProps) {
         {projects.map((project) => (
           <article
             key={project.id}
-            className={`inline-flex flex-col w-3/12 rounded-lg bg-white  relative h-80  ${
+            className={`inline-flex flex-col w-3/12 rounded-lg bg-white relative h-80  ${
               project.disabled ? "cursor-not-allowed" : "cursor-pointer"
             } sm:w-full md:w-3/12 `}
             onClick={() =>
@@ -95,10 +95,11 @@ export default function Project({ sectionRef }: ProjectProps) {
             }
           >
             <div
-              className={`p-6 flex relative items-center justify-center rounded-t-md h-2/3 bg-[${project.bgColor}]`}
+              className={`p-6 flex relative items-center justify-center rounded-t-md h-2/3`}
+              style={{ backgroundColor: project.bgColor }}
             >
               <img src={project.logo} />
-              <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white">
+              <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white border border-gray">
                 {project.disabled
                   ? "🛠️ 작업중이예요"
                   : `👩🏻‍💻 퍼블리싱 기여도 ${project.publishingPercentage}`}

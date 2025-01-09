@@ -84,9 +84,9 @@ export default function Modal({
               />
               <img
                 src={adlerLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-6"
+                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-6">
+              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 아들러
               </h4>
             </article>
@@ -265,9 +265,9 @@ export default function Modal({
               <div className="w-full h-52 bg-gray200" />
               <img
                 src={netflixLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-6 sm:bottom-16"
+                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16 sm:bottom-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-6">
+              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 넷플릭스 랜딩페이지 클론코딩
               </h4>
             </article>
@@ -393,9 +393,9 @@ export default function Modal({
               <div className="w-full h-52 bg-[#fec89a]" />
               <img
                 src={portfolioLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-6 sm:bottom-16"
+                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16 sm:bottom-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-6">
+              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 포트폴리오 웹사이트 제작
               </h4>
             </article>
@@ -522,9 +522,9 @@ export default function Modal({
               <div className="w-full h-52 bg-[#fec89a]" />
               <img
                 src={matzipdlerLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-6 sm:bottom-16"
+                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16 sm:bottom-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-6">
+              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 맛집들러
               </h4>
             </article>
@@ -653,9 +653,9 @@ export default function Modal({
               <div className="w-full h-52 bg-[#A5E1A6]" />
               <img
                 src={detailpageLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-6 sm:bottom-16"
+                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16 sm:bottom-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-6">
+              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 상세페이지
               </h4>
             </article>
