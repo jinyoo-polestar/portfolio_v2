@@ -27,17 +27,17 @@ export default function Header({
   };
 
   return (
-    <nav className="fixed w-full h-20 backdrop-blur-2xl z-20 flex py-2 px-1/10 items-center justify-between border-gray border-b sm:h-16">
+    <nav className="fixed z-20 flex h-20 w-full items-center justify-between border-b border-gray px-1/10 py-2 backdrop-blur-2xl sm:h-16">
       <img src={nameLogo} className="h-3/5" alt="로고" />
       <div className="inline-flex items-center gap-10">
-        <ul className="flex gap-10 cursor-pointer text-gray200 sm:hidden md:flex">
+        <ul className="flex cursor-pointer gap-10 text-gray200 sm:hidden md:flex">
           <li onClick={() => onMenuClick(homeRef)}>HOME</li>
           <li onClick={() => onMenuClick(aboutRef)}>ABOUT</li>
           <li onClick={() => onMenuClick(workRef)}>WORK</li>
           <li onClick={() => onMenuClick(projectRef)}>PROJECT</li>
         </ul>
         <button
-          className="bg-black py-2 px-3 text-white rounded-md text-sm font-bold hover:-translate-y-1"
+          className="rounded-md bg-black px-3 py-2 text-sm font-bold text-white hover:-translate-y-1"
           onClick={() => onMenuClick(contactRef)}
         >
           지금 바로 연락하기 📲

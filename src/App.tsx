@@ -19,7 +19,7 @@ function App() {
   const contactRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="m-0 p-0 w-full font-sans">
+    <div className="m-0 w-full p-0 font-sans">
       <Header
         homeRef={homeRef}
         aboutRef={aboutRef}

@@ -59,22 +59,22 @@ export default function Modal({
 
   return (
     <div
-      className="absolute left-0 top-0 w-screen h-screen flex justify-center items-center bg-blackTransparent sm:h-full md:h-screen"
+      className="absolute left-0 top-0 flex h-screen w-screen items-center justify-center bg-blackTransparent sm:h-full md:h-screen"
       onClick={onCloseModal}
     >
-      <div className="text-white font-black text-2xl absolute top-16 right-20 cursor-pointer p-4">
+      <div className="absolute right-20 top-16 cursor-pointer p-4 text-2xl font-black text-white">
         ╳
       </div>
       {/* ADLER */}
       {modalContent === 0 && (
         <div
-          className="w-3/5 h-5/6 relative bg-white overflow-y-auto overflow-x-hidden sm:w-5/6 md:w-3/5"
+          className="relative h-5/6 w-3/5 overflow-y-auto overflow-x-hidden bg-white sm:w-5/6 md:w-3/5"
           onClick={(e) => e.stopPropagation()}
         >
           <div>
             <article className="flex flex-col">
               <div
-                className="w-full h-52"
+                className="h-52 w-full"
                 style={{
                   backgroundImage:
                     "url(https://img.freepik.com/free-photo/pink-yellow-plain_53876-96060.jpg)",
@@ -84,15 +84,15 @@ export default function Modal({
               />
               <img
                 src={adlerLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16"
+                className="relative bottom-16 left-16 w-28 sm:left-4 md:left-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
+              <h4 className="relative bottom-16 left-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 아들러
               </h4>
             </article>
             <div className="px-16 pb-16 sm:px-6 sm:pb-6 md:px-16">
-              <article className="flex flex-col border-b py-8 border-gray ">
-                <h5 className="font-black text-xl mb-2">요약</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-2 text-xl font-black">요약</h5>
                 <div className="flex flex-col gap-1">
                   <p className="flex items-center gap-1">
                     <img src={folderIcon} className="h-7 w-auto" />
@@ -109,18 +109,18 @@ export default function Modal({
                   </p>
                 </div>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">프로젝트 소개</h5>
-                <p className="leading-relaxed w-4/5 text-gray200 sm:w-full md:w-4/5">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">프로젝트 소개</h5>
+                <p className="w-4/5 leading-relaxed text-gray200 sm:w-full md:w-4/5">
                   아들러는 사용자가 손쉽게 3D 가상공간을 만들고 공유할 수 있는
                   SNS 플랫폼입니다. 클릭 몇 번으로 자신만의 3D 공간을 생성하고
                   친구를 초대할 수 있습니다. 이 프로젝트에서 서비스 기획,
                   프론트엔드 개발, 그리고 퍼블리싱을 담당했습니다.
                 </p>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">주요 업무</h5>
-                <ul className="leading-relaxed list-disc list-inside">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">주요 업무</h5>
+                <ul className="list-inside list-disc leading-relaxed">
                   <li>정식 런칭을 위해 기존 모든 페이지에 대한 반응형 작업</li>
                   <li>
                     MUI 라이브러리 활용해 UI 요소 컴포넌트화하여 퍼블리싱 작업
@@ -144,13 +144,13 @@ export default function Modal({
                   </li>
                 </ul>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">진행과정</h5>
-                <ol className="list-decimal list-inside">
-                  <li className="font-semibold text-lg mb-1">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">진행과정</h5>
+                <ol className="list-inside list-decimal">
+                  <li className="mb-1 text-lg font-semibold">
                     UI 설계 및 퍼블리싱
                   </li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>
                       Figma로 제공된 디자인 시안을 바탕으로 UI 라이브러리 MUI
                       커스텀을 이용해 공통 UI 구축
@@ -160,10 +160,10 @@ export default function Modal({
                       일관된 사용자 경험을 제공
                     </li>
                   </ul>
-                  <li className="font-semibold text-lg mb-1">
+                  <li className="mb-1 text-lg font-semibold">
                     프론트엔드 개발
                   </li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>새롭게 추가된 페이지의 기능 및 UI/UX 개발</li>
                     <li>
                       Three.js 팀과 협업하여 아바타 커스터마이징 페이지 제작,
@@ -174,10 +174,10 @@ export default function Modal({
                       구조 설계
                     </li>
                   </ul>
-                  <li className="font-semibold text-lg mb-1">
+                  <li className="mb-1 text-lg font-semibold">
                     이메일 템플릿 퍼블리싱
                   </li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>
                       HTML, CSS를 활용해 이메일 클라이언트(Naver, Gmail 등)
                       호환성을 고려한 템플릿 제작
@@ -187,8 +187,8 @@ export default function Modal({
                       일관적인 경험 제공
                     </li>
                   </ul>
-                  <li className="font-semibold text-lg mb-1">서비스 기획</li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+                  <li className="mb-1 text-lg font-semibold">서비스 기획</li>
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>와이어프레임 제작 및 기능별 우선순위 설정</li>
                     <li>
                       서비스 방향성을 명확히 하기 위한 기획안 작성 및 UX Writing
@@ -205,32 +205,32 @@ export default function Modal({
                   </ul>
                 </ol>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">결과물</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">결과물</h5>
                 <div className="grid grid-cols-3 grid-rows-2 gap-4">
-                  <div className="rounded-md col-span-2 row-span-2 overflow-hidden border border-gray">
+                  <div className="col-span-2 row-span-2 overflow-hidden rounded-md border border-gray">
                     <img
                       src={testImage1}
-                      className="w-full h-full object-fill scale-105"
+                      className="h-full w-full scale-105 object-fill"
                     />
                   </div>
-                  <div className="rounded-md grid-cols-1 overflow-hidden border border-gray">
+                  <div className="grid-cols-1 overflow-hidden rounded-md border border-gray">
                     <img
                       src={testImage3}
-                      className="w-full h-full object-fill scale-105"
+                      className="h-full w-full scale-105 object-fill"
                     />
                   </div>
-                  <div className="rounded-md grid-cols-1 overflow-hidden border border-gray">
+                  <div className="grid-cols-1 overflow-hidden rounded-md border border-gray">
                     <img
                       src={testImage4}
-                      className="w-full h-full object-fill scale-105"
+                      className="h-full w-full scale-105 object-fill"
                     />
                   </div>
                 </div>
               </article>
               <article className="flex flex-col py-8">
-                <h5 className="font-black text-xl mb-4">프로젝트 결과</h5>
-                <ul className="list-disc list-inside">
+                <h5 className="mb-4 text-xl font-black">프로젝트 결과</h5>
+                <ul className="list-inside list-disc">
                   <li className="leading-relaxed">
                     목표한 기간 내에 서비스를 성공적으로 런칭하며, 프로젝트의
                     주요 목표를 달성했습니다.
@@ -257,23 +257,23 @@ export default function Modal({
       {/* NETFLIX */}
       {modalContent === 1 && (
         <div
-          className="w-3/5 h-5/6 relative bg-white overflow-y-auto overflow-x-hidden sm:w-5/6 md:w-3/5"
+          className="relative h-5/6 w-3/5 overflow-y-auto overflow-x-hidden bg-white sm:w-5/6 md:w-3/5"
           onClick={(e) => e.stopPropagation()}
         >
           <div>
             <article className="flex flex-col">
-              <div className="w-full h-52 bg-gray200" />
+              <div className="h-52 w-full bg-gray200" />
               <img
                 src={netflixLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16 sm:bottom-16"
+                className="relative bottom-16 left-16 w-28 sm:bottom-16 sm:left-4 md:left-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
+              <h4 className="relative bottom-16 left-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 넷플릭스 랜딩페이지 클론코딩
               </h4>
             </article>
             <div className="px-16 pb-16 sm:px-6 sm:pb-6 md:px-16">
-              <article className="flex flex-col border-b py-8 border-gray ">
-                <h5 className="font-black text-xl mb-2">요약</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-2 text-xl font-black">요약</h5>
                 <div className="flex flex-col gap-1 sm:text-sm md:text-base">
                   <p className="flex items-center gap-1">
                     <img src={folderIcon} className="h-7 w-auto" />
@@ -293,9 +293,9 @@ export default function Modal({
                   </p>
                 </div>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">프로젝트 소개</h5>
-                <p className="leading-relaxed w-4/5 text-gray200 sm:w-full md:w-4/5">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">프로젝트 소개</h5>
+                <p className="w-4/5 leading-relaxed text-gray200 sm:w-full md:w-4/5">
                   해당 프로젝트는 실력 향상과 개선점 파악을 목표로 소규모
                   프로젝트로 진행했습니다. 프레임워크나 외부 라이브러리는 전혀
                   사용하지 않고, HTML, CSS, Javascript만으로 전체적인 구조와
@@ -304,19 +304,19 @@ export default function Modal({
                   경험을 위해 반응형 디자인을 적용했습니다.
                 </p>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">주요 업무</h5>
-                <ul className="leading-relaxed list-disc list-inside">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">주요 업무</h5>
+                <ul className="list-inside list-disc leading-relaxed">
                   <li>랜딩페이지 퍼블리싱 작업 및 인터렉션 구현</li>
                   <li>모바일, 태블릿, 데스크탑에 대한 반응형 작업</li>
                   <li>웹 접근성과 SEO를 고려한 HTML 구조 설계</li>
                 </ul>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">진행과정</h5>
-                <ol className="list-decimal list-inside">
-                  <li className="font-semibold text-lg mb-1">퍼블리싱</li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">진행과정</h5>
+                <ol className="list-inside list-decimal">
+                  <li className="mb-1 text-lg font-semibold">퍼블리싱</li>
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>
                       BEM 방식을 사용해 클래스 명명 규칙 일관되게 유지 및 컨벤션
                       도입
@@ -338,36 +338,36 @@ export default function Modal({
                   </ul>
                 </ol>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">결과물</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">결과물</h5>
                 <a
                   href="https://github.com/jinyoo-polestar/portfolio-netflix"
                   target="_blank"
-                  className="px-2 py-2 rounded-md font-medium border border-gray text-gray200 mr-3"
+                  className="mr-3 rounded-md border border-gray px-2 py-2 font-medium text-gray200"
                 >
                   코드 확인하기
                 </a>
                 <a
                   href="https://netfl-clone-project.netlify.app/"
                   target="_blank"
-                  className="px-2 py-2 rounded-md font-medium border border-gray text-gray200"
+                  className="rounded-md border border-gray px-2 py-2 font-medium text-gray200"
                 >
                   사이트 보러가기
                 </a>
-                <div className="flex rounded-md items-start gap-4">
+                <div className="flex items-start gap-4 rounded-md">
                   <img
                     src={netflixPCImage}
-                    className="w-3/5 object-contain rounded-sm"
+                    className="w-3/5 rounded-sm object-contain"
                   />
                   <img
                     src={netflixMobileImage}
-                    className="w-1/5 object-contain rounded-sm"
+                    className="w-1/5 rounded-sm object-contain"
                   />
                 </div>
               </article>
               <article className="flex flex-col py-8">
-                <h5 className="font-black text-xl mb-4">프로젝트 결과</h5>
-                <ul className="list-disc list-inside">
+                <h5 className="mb-4 text-xl font-black">프로젝트 결과</h5>
+                <ul className="list-inside list-disc">
                   <li className="leading-relaxed">
                     BEM 방식을 적용하여 클래스 명명 규칙을 일관되게 유지했으며,
                     이를 통해 코드의 가독성을 높이고 클래스명만으로 요소의
@@ -399,23 +399,23 @@ export default function Modal({
       {/* 포트폴리오 */}
       {modalContent === 2 && (
         <div
-          className="w-3/5 h-5/6 relative bg-white overflow-y-auto overflow-x-hidden sm:w-5/6 md:w-3/5"
+          className="relative h-5/6 w-3/5 overflow-y-auto overflow-x-hidden bg-white sm:w-5/6 md:w-3/5"
           onClick={(e) => e.stopPropagation()}
         >
           <div>
             <article className="flex flex-col">
-              <div className="w-full h-52 bg-[#fec89a]" />
+              <div className="h-52 w-full bg-[#fec89a]" />
               <img
                 src={portfolioLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16 sm:bottom-16"
+                className="relative bottom-16 left-16 w-28 sm:bottom-16 sm:left-4 md:left-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
+              <h4 className="relative bottom-16 left-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 포트폴리오 웹사이트 제작
               </h4>
             </article>
             <div className="px-16 pb-16 sm:px-6 sm:pb-6 md:px-16">
-              <article className="flex flex-col border-b py-8 border-gray ">
-                <h5 className="font-black text-xl mb-2">요약</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-2 text-xl font-black">요약</h5>
                 <div className="flex flex-col gap-1 sm:text-sm md:text-base">
                   <p className="flex items-center gap-1">
                     <img src={folderIcon} className="h-7 w-auto" />
@@ -435,34 +435,34 @@ export default function Modal({
                   </p>
                 </div>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">프로젝트 소개</h5>
-                <p className="leading-relaxed w-4/5 text-gray200 sm:w-full md:w-4/5">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">프로젝트 소개</h5>
+                <p className="w-4/5 leading-relaxed text-gray200 sm:w-full md:w-4/5">
                   이 포트폴리오는 저의 역량과 다양한 스킬을 활용해보기 위해
                   제작한 프로젝트입니다. 기획부터 디자인, 퍼블리싱까지 전 과정을
                   직접 진행했으며, 퍼블리싱에서 자주 사용되는 jQuery, SCSS,
                   GSAP와 같은 라이브러리를 활용하여 완성도를 높였습니다.
                 </p>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">주요 업무</h5>
-                <ul className="leading-relaxed list-disc list-inside">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">주요 업무</h5>
+                <ul className="list-inside list-disc leading-relaxed">
                   <li>피그마를 이용한 기획 및 디자인</li>
                   <li>퍼블리싱 작업 및 인터렉션 구현</li>
                   <li>모바일, 태블릿, 데스크탑에 대한 반응형 작업</li>
                   <li>웹 접근성과 SEO를 고려한 HTML 구조 설계</li>
                 </ul>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">진행과정</h5>
-                <ol className="list-decimal list-inside">
-                  <li className="font-semibold text-lg mb-1">기획</li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">진행과정</h5>
+                <ol className="list-inside list-decimal">
+                  <li className="mb-1 text-lg font-semibold">기획</li>
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>웹사이트에 들어갈 콘텐츠를 기획하고 주요 내용 확정</li>
                     <li>와이어프레임 및 기본 레이아웃 설계</li>
                   </ul>
-                  <li className="font-semibold text-lg mb-1">퍼블리싱</li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+                  <li className="mb-1 text-lg font-semibold">퍼블리싱</li>
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>
                       BEM 방식을 사용해 클래스 명명 규칙 일관되게 유지 및 컨벤션
                       도입
@@ -484,38 +484,38 @@ export default function Modal({
                   </ul>
                 </ol>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">결과물</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">결과물</h5>
                 <div className="mb-4">
                   <a
                     href="https://github.com/jinyoo-polestar/portfolio"
                     target="_blank"
-                    className="px-2 py-2 rounded-md font-medium border border-gray text-gray200 mr-3"
+                    className="mr-3 rounded-md border border-gray px-2 py-2 font-medium text-gray200"
                   >
                     코드 확인하기
                   </a>
                   <a
                     href="https://jinyoo-portfolio.netlify.app/"
                     target="_blank"
-                    className="px-2 py-2 rounded-md font-medium border border-gray text-gray200"
+                    className="rounded-md border border-gray px-2 py-2 font-medium text-gray200"
                   >
                     사이트 보러가기
                   </a>
                 </div>
-                <div className="flex rounded-md items-start gap-4">
+                <div className="flex items-start gap-4 rounded-md">
                   <img
                     src={portfolioPCImage}
-                    className="w-3/5 object-contain rounded-sm border border-gray"
+                    className="w-3/5 rounded-sm border border-gray object-contain"
                   />
                   <img
                     src={portfolioMobileImage}
-                    className="w-1/5 object-contain rounded-sm border border-gray"
+                    className="w-1/5 rounded-sm border border-gray object-contain"
                   />
                 </div>
               </article>
               <article className="flex flex-col py-8">
-                <h5 className="font-black text-xl mb-4">프로젝트 결과</h5>
-                <ul className="list-disc list-inside">
+                <h5 className="mb-4 text-xl font-black">프로젝트 결과</h5>
+                <ul className="list-inside list-disc">
                   <li className="leading-relaxed">
                     BEM 방식을 적용하여 클래스 명명 규칙을 일관되게 유지했습니다
                   </li>
@@ -544,23 +544,23 @@ export default function Modal({
 
       {modalContent === 3 && (
         <div
-          className="w-3/5 h-5/6 relative bg-white overflow-y-auto overflow-x-hidden sm:w-5/6 md:w-3/5"
+          className="relative h-5/6 w-3/5 overflow-y-auto overflow-x-hidden bg-white sm:w-5/6 md:w-3/5"
           onClick={(e) => e.stopPropagation()}
         >
           <div>
             <article className="flex flex-col">
-              <div className="w-full h-52 bg-[#fec89a]" />
+              <div className="h-52 w-full bg-[#fec89a]" />
               <img
                 src={matzipdlerLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16 sm:bottom-16"
+                className="relative bottom-16 left-16 w-28 sm:bottom-16 sm:left-4 md:left-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
+              <h4 className="relative bottom-16 left-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 맛집들러
               </h4>
             </article>
             <div className="px-16 pb-16 sm:px-6 sm:pb-6 md:px-16">
-              <article className="flex flex-col border-b py-8 border-gray ">
-                <h5 className="font-black text-xl mb-2">요약</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-2 text-xl font-black">요약</h5>
                 <div className="flex flex-col gap-1 sm:text-sm md:text-base">
                   <p className="flex items-center gap-1">
                     <img src={folderIcon} className="h-7 w-auto" />
@@ -580,18 +580,18 @@ export default function Modal({
                   </p>
                 </div>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">프로젝트 소개</h5>
-                <p className="leading-relaxed w-4/5 text-gray200 sm:w-full md:w-4/5">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">프로젝트 소개</h5>
+                <p className="w-4/5 leading-relaxed text-gray200 sm:w-full md:w-4/5">
                   점심시간마다 뭐 먹을지 고민을 하는 회사 팀원들을 위해, 개발팀
                   동료와 함께 회사 근처 맛집 추천 사이트를 토이 프로젝트로
                   제작했습니다. 기획, 디자인, 퍼블리싱, 데이터 수집을 맡아
                   진행했습니다.
                 </p>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">주요 업무</h5>
-                <ul className="leading-relaxed list-disc list-inside">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">주요 업무</h5>
+                <ul className="list-inside list-disc leading-relaxed">
                   <li>서비스 기획 및 데이터 수집</li>
                   <li>퍼블리싱 작업 및 인터렉션 구현</li>
                   <li>
@@ -601,16 +601,16 @@ export default function Modal({
                   <li>모바일, 태블릿, 데스크탑에 대한 반응형 작업</li>
                 </ul>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">진행과정</h5>
-                <ol className="list-decimal list-inside">
-                  <li className="font-semibold text-lg mb-1">기획 & 디자인</li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">진행과정</h5>
+                <ol className="list-inside list-decimal">
+                  <li className="mb-1 text-lg font-semibold">기획 & 디자인</li>
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>웹사이트에 들어갈 콘텐츠를 기획하고 주요 내용 확정</li>
                     <li>기본 레이아웃 설계 및 디자인 작업</li>
                   </ul>
-                  <li className="font-semibold text-lg mb-1">퍼블리싱</li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+                  <li className="mb-1 text-lg font-semibold">퍼블리싱</li>
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>HTML/CSS 퍼블리싱</li>
                     <li>
                       다양한 디바이스(모바일, 태블릿, 데스크톱)에 대한 반응형
@@ -628,32 +628,32 @@ export default function Modal({
                   </ul>
                 </ol>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">결과물</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">결과물</h5>
                 <div className="grid grid-cols-3 grid-rows-2 gap-4">
-                  <div className="rounded-md col-span-2 row-span-2 overflow-hidden border border-gray">
+                  <div className="col-span-2 row-span-2 overflow-hidden rounded-md border border-gray">
                     <img
                       src={matzipdlerImage1}
-                      className="w-full h-full object-cover"
+                      className="h-full w-full object-cover"
                     />
                   </div>
-                  <div className="rounded-md grid-cols-1 overflow-hidden border border-gray">
+                  <div className="grid-cols-1 overflow-hidden rounded-md border border-gray">
                     <img
                       src={matzipdlerImage2}
-                      className="w-full h-full object-cover"
+                      className="h-full w-full object-cover"
                     />
                   </div>
-                  <div className="rounded-md grid-cols-1 overflow-hidden border border-gray">
+                  <div className="grid-cols-1 overflow-hidden rounded-md border border-gray">
                     <img
                       src={matzipdlerImage3}
-                      className="w-full h-full object-cover"
+                      className="h-full w-full object-cover"
                     />
                   </div>
                 </div>
               </article>
               <article className="flex flex-col py-8">
-                <h5 className="font-black text-xl mb-4">프로젝트 결과</h5>
-                <ul className="list-disc list-inside">
+                <h5 className="mb-4 text-xl font-black">프로젝트 결과</h5>
+                <ul className="list-inside list-disc">
                   <li className="leading-relaxed">
                     사내 프로젝트를 성공적으로 개발하여 팀원들의 점심시간 고민을
                     줄였으며, 업무 효율성을 높이는 데 기여했습니다.
@@ -675,23 +675,23 @@ export default function Modal({
       )}
       {modalContent === 4 && (
         <div
-          className="w-3/5 h-5/6 relative bg-white overflow-y-auto overflow-x-hidden sm:w-5/6 md:w-3/5"
+          className="relative h-5/6 w-3/5 overflow-y-auto overflow-x-hidden bg-white sm:w-5/6 md:w-3/5"
           onClick={(e) => e.stopPropagation()}
         >
           <div>
             <article className="flex flex-col">
-              <div className="w-full h-52 bg-[#A5E1A6]" />
+              <div className="h-52 w-full bg-[#A5E1A6]" />
               <img
                 src={detailpageLogo}
-                className="w-28 relative left-16 bottom-16 sm:left-4 md:left-16 sm:bottom-16"
+                className="relative bottom-16 left-16 w-28 sm:bottom-16 sm:left-4 md:left-16"
               />
-              <h4 className="relative left-16 bottom-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
+              <h4 className="relative bottom-16 left-16 mt-4 text-2xl font-bold sm:left-6 md:left-16">
                 상세페이지
               </h4>
             </article>
             <div className="px-16 pb-16 sm:px-6 sm:pb-6 md:px-16">
-              <article className="flex flex-col border-b py-8 border-gray ">
-                <h5 className="font-black text-xl mb-2">요약</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-2 text-xl font-black">요약</h5>
                 <div className="flex flex-col gap-1 sm:text-sm md:text-base">
                   <p className="flex items-center gap-1">
                     <img src={folderIcon} className="h-7 w-auto" />
@@ -711,28 +711,28 @@ export default function Modal({
                   </p>
                 </div>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">프로젝트 소개</h5>
-                <p className="leading-relaxed w-4/5 text-gray200 sm:w-full md:w-4/5">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">프로젝트 소개</h5>
+                <p className="w-4/5 leading-relaxed text-gray200 sm:w-full md:w-4/5">
                   상세페이지 기획부터 디자인과 제작까지 프로젝트의 모든 과정을
                   직접 주도하며, 사용자 경험을 극대화하고 브랜드 가치를
                   효과적으로 전달했습니다.
                 </p>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">주요 업무</h5>
-                <ul className="leading-relaxed list-disc list-inside">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">주요 업무</h5>
+                <ul className="list-inside list-disc leading-relaxed">
                   <li>경쟁사 분석을 통한 차별화된 기획안 도출</li>
                   <li>스토리텔링 기반의 콘텐츠 및 레이아웃 설계</li>
                   <li>디자인 컨셉 수립 및 시안 제작</li>
                   <li>클라이언트 피드백 반영 및 최종 디자인 완성</li>
                 </ul>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">진행과정</h5>
-                <ol className="list-decimal list-inside">
-                  <li className="font-semibold text-lg mb-1">기획 & 디자인</li>
-                  <ul className="list-bar list-inside mb-4 pl-4">
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">진행과정</h5>
+                <ol className="list-inside list-decimal">
+                  <li className="mb-1 text-lg font-semibold">기획 & 디자인</li>
+                  <ul className="mb-4 list-inside list-bar pl-4">
                     <li>
                       클라이언트 요구사항 분석 및 상세페이지 기획 방향 설정
                     </li>
@@ -744,41 +744,41 @@ export default function Modal({
                   </ul>
                 </ol>
               </article>
-              <article className="flex flex-col border-b py-8 border-gray">
-                <h5 className="font-black text-xl mb-4">결과물</h5>
+              <article className="flex flex-col border-b border-gray py-8">
+                <h5 className="mb-4 text-xl font-black">결과물</h5>
                 <div className="">
-                  <div className="flex gap-2 mb-4">
+                  <div className="mb-4 flex gap-2">
                     <button
-                      className="py-2 px-3 border border-gray rounded-lg text-sm hover:bg-blue200"
+                      className="rounded-lg border border-gray px-3 py-2 text-sm hover:bg-blue200"
                       onClick={() => onClickDetailBtn(0)}
                     >
                       👕 컴피오 검진복
                     </button>
                     <button
-                      className="py-2 px-3 border border-gray rounded-lg text-sm hover:bg-blue200"
+                      className="rounded-lg border border-gray px-3 py-2 text-sm hover:bg-blue200"
                       onClick={() => onClickDetailBtn(1)}
                     >
                       🫖 비티나인 장어진액
                     </button>
                     <button
-                      className="py-2 px-3 border border-gray rounded-lg text-sm hover:bg-blue200"
+                      className="rounded-lg border border-gray px-3 py-2 text-sm hover:bg-blue200"
                       onClick={() => onClickDetailBtn(2)}
                     >
                       🧴 두루두루 젤리챱
                     </button>
                   </div>
-                  <div className="rounded-md col-span-2 row-span-2 overflow-hidden border border-gray">
+                  <div className="col-span-2 row-span-2 overflow-hidden rounded-md border border-gray">
                     <img
                       src={getDetailPageImage()}
-                      className="w-full h-full object-cover"
+                      className="h-full w-full object-cover"
                       alt="상세페이지 이미지"
                     />
                   </div>
                 </div>
               </article>
               <article className="flex flex-col py-8">
-                <h5 className="font-black text-xl mb-4">프로젝트 결과</h5>
-                <ul className="list-disc list-inside">
+                <h5 className="mb-4 text-xl font-black">프로젝트 결과</h5>
+                <ul className="list-inside list-disc">
                   <li className="leading-relaxed">
                     고객과의 미팅을 통해 목표와 요구사항 분석한 후, 원하는
                     방향성에 맞게 기획 및 제작

@@ -18,17 +18,17 @@ export default function Work({ sectionRef }: WorkProps) {
       <p className="font-sans">
         3D SNS 서비스를 만든 아들러에서 이런 업무들을 진행했어요
       </p>
-      <div className="flex flex-col gap-20 mt-10 w-9/10 sm:w-full md:w-9/10">
-        <article className="flex gap-10 items-center w-full justify-between sm:flex-col md:flex-row">
-          <div className="w-1/2 rounded-xl overflow-x-hidden border border-gray sm:w-full md:w-1/2">
+      <div className="mt-10 flex w-9/10 flex-col gap-20 sm:w-full md:w-9/10">
+        <article className="flex w-full items-center justify-between gap-10 sm:flex-col md:flex-row">
+          <div className="w-1/2 overflow-x-hidden rounded-xl border border-gray sm:w-full md:w-1/2">
             <img src={adlerSampleImg1} alt="" className="w-full object-cover" />
           </div>
-          <div className="w-3/5 sm:w-full md-3/5">
-            <h3 className="font-semibold text-2xl mb-4 font-higilight">
+          <div className="md-3/5 w-3/5 sm:w-full">
+            <h3 className="mb-4 font-higilight text-2xl font-semibold">
               4가지 디바이스에 맞춘
               <br /> <b className="text-blue">최적화된 반응형 디자인</b>
             </h3>
-            <p className="w-11/12 font-sans break-keep sm:w-full md:w-11/12">
+            <p className="w-11/12 break-keep font-sans sm:w-full md:w-11/12">
               서비스 정식 런칭을 위해 <b>모든 페이지에 대한 반응형 작업</b>을
               진행했습니다.
               <br />
@@ -40,15 +40,15 @@ export default function Work({ sectionRef }: WorkProps) {
             </p>
           </div>
         </article>
-        <article className="flex gap-10 items-center flex-row-reverse justify-between sm:flex-col md:flex-row-reverse">
-          <div className="w-1/2 rounded-xl overflow-x-hidden border border-gray sm:w-full md:w-1/2">
+        <article className="flex flex-row-reverse items-center justify-between gap-10 sm:flex-col md:flex-row-reverse">
+          <div className="w-1/2 overflow-x-hidden rounded-xl border border-gray sm:w-full md:w-1/2">
             <img src={adlerSampleImg3} alt="" className="w-full object-cover" />
           </div>
-          <div className="w-3/5 sm:w-full md-3/5">
-            <h3 className="font-semibold text-2xl mb-4 font-higilight">
+          <div className="md-3/5 w-3/5 sm:w-full">
+            <h3 className="mb-4 font-higilight text-2xl font-semibold">
               새로운 <b className="text-blue">기능 및 페이지 개발</b>
             </h3>
-            <p className="w-11/12 font-sans break-keep sm:w-full md:w-11/12">
+            <p className="w-11/12 break-keep font-sans sm:w-full md:w-11/12">
               새롭게 추가되는 기능과 페이지를 제작했습니다. 탐색, 아바타 설정,
               알림 설정 페이지 및 팔로우/팔로잉 기능 등을 개발하여 사용자 경험을
               강화했습니다. 각 기능의 요구사항을 분석하고, 직관적인 UI와 원활한
@@ -56,15 +56,15 @@ export default function Work({ sectionRef }: WorkProps) {
             </p>
           </div>
         </article>
-        <article className="flex gap-10 items-center w-full justify-between sm:flex-col md:flex-row">
-          <div className="w-1/2 rounded-xl overflow-x-hidden border border-gray sm:w-full md:w-1/2">
+        <article className="flex w-full items-center justify-between gap-10 sm:flex-col md:flex-row">
+          <div className="w-1/2 overflow-x-hidden rounded-xl border border-gray sm:w-full md:w-1/2">
             <img src={adlerSampleImg5} alt="" className="w-full object-cover" />
           </div>
-          <div className="w-3/5 sm:w-full md-3/5">
-            <h3 className="font-semibold text-2xl mb-4 font-higilight">
+          <div className="md-3/5 w-3/5 sm:w-full">
+            <h3 className="mb-4 font-higilight text-2xl font-semibold">
               안내 <b className="text-blue">메일 템플릿 퍼블리싱</b>
             </h3>
-            <p className="w-11/12 font-sans break-keep sm:w-full md:w-11/12">
+            <p className="w-11/12 break-keep font-sans sm:w-full md:w-11/12">
               마케팅팀, 백엔드팀과 협업하여 요구사항을 분석하고, 회원가입 완료,
               팔로우/댓글 알림, 비밀번호 재설정 등 다양한 안내 메일 템플릿을
               퍼블리싱했습니다. 각 템플릿은 사용자에게 명확하고 직관적인 정보를
@@ -73,16 +73,16 @@ export default function Work({ sectionRef }: WorkProps) {
             </p>
           </div>
         </article>
-        <article className="flex gap-10 items-center flex-row-reverse justify-between sm:flex-col md:flex-row-reverse">
-          <div className="w-1/2 rounded-xl overflow-x-hidden border border-gray sm:w-full md:w-1/2">
+        <article className="flex flex-row-reverse items-center justify-between gap-10 sm:flex-col md:flex-row-reverse">
+          <div className="w-1/2 overflow-x-hidden rounded-xl border border-gray sm:w-full md:w-1/2">
             <img src={adlerSampleImg2} alt="" className="w-full object-cover" />
           </div>
-          <div className="w-3/5 sm:w-full md-3/5">
-            <h3 className="font-semibold text-2xl mb-4 font-higilight">
+          <div className="md-3/5 w-3/5 sm:w-full">
+            <h3 className="mb-4 font-higilight text-2xl font-semibold">
               <b className="text-blue">개발팀 프로젝트 일정 관리 </b>및 <br />
               <b className="text-blue">타 팀과의 커뮤니케이션</b>
             </h3>
-            <p className="w-11/12 font-sans break-keep sm:w-full md:w-11/12">
+            <p className="w-11/12 break-keep font-sans sm:w-full md:w-11/12">
               PM으로서 개발팀 프로젝트 일정을 관리했습니다. 버전별 목표와 일정에
               맞춰 진행 상황을 점검하고 프로젝트가 원활하게 진행되도록 했습니다.
               팀원들과의 원활한 커뮤니케이션을 통해 일정 지연 없이 목표를 달성할
@@ -92,15 +92,15 @@ export default function Work({ sectionRef }: WorkProps) {
             </p>
           </div>
         </article>
-        <article className="flex gap-10 items-center w-full justify-between sm:flex-col md:flex-row">
-          <div className="w-1/2 rounded-xl overflow-x-hidden border border-gray sm:w-full md:w-1/2">
+        <article className="flex w-full items-center justify-between gap-10 sm:flex-col md:flex-row">
+          <div className="w-1/2 overflow-x-hidden rounded-xl border border-gray sm:w-full md:w-1/2">
             <img src={adlerSampleImg6} alt="" className="w-full object-cover" />
           </div>
-          <div className="w-3/5 sm:w-full md-3/5">
-            <h3 className="font-black text-2xl mb-4 font-higilight text-blue ">
+          <div className="md-3/5 w-3/5 sm:w-full">
+            <h3 className="mb-4 font-higilight text-2xl font-black text-blue">
               서비스 기획 참여
             </h3>
-            <p className="w-11/12 font-sans break-keep">
+            <p className="w-11/12 break-keep font-sans">
               서비스 기획 단계에서 요구사항 분석 및 기능 정의에 참여했습니다.
               와이어프레임 설계와 UX 라이팅을 통해 직관적인 UI/UX를 구현하고,
               사용자 경험을 최적화할 수 있도록 기여했습니다. 또한, 기능 정의와

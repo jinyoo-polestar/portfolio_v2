@@ -87,32 +87,32 @@ export default function Project({ sectionRef }: ProjectProps) {
         {projects.map((project) => (
           <article
             key={project.id}
-            className={`inline-flex flex-col w-3/12 rounded-lg bg-white relative h-80  ${
+            className={`relative inline-flex h-80 w-3/12 flex-col rounded-lg bg-white ${
               project.disabled ? "cursor-not-allowed" : "cursor-pointer"
-            } sm:w-full md:w-3/12 `}
+            } sm:w-full md:w-3/12`}
             onClick={() =>
               !project.disabled && handleOpenModalContent(project.id)
             }
           >
             <div
-              className={`p-6 flex relative items-center justify-center rounded-t-md h-2/3`}
+              className={`relative flex h-2/3 items-center justify-center rounded-t-md p-6`}
               style={{ backgroundColor: project.bgColor }}
             >
               <img src={project.logo} />
-              <span className="absolute right-2 bottom-2 py-1 px-3 text-xs rounded-2xl bg-white border border-gray">
+              <span className="absolute bottom-2 right-2 rounded-2xl border border-gray bg-white px-3 py-1 text-xs">
                 {project.disabled
                   ? "🛠️ 작업중이예요"
                   : `👩🏻‍💻 퍼블리싱 기여도 ${project.publishingPercentage}`}
               </span>
             </div>
             <div className="p-6 pb-4">
-              <h2 className="font-medium text-2xl tracking-wide mb-3">
+              <h2 className="mb-3 text-2xl font-medium tracking-wide">
                 {project.title}
               </h2>
-              <p className="text-gray200 font-regular text-sm break-keep">
+              <p className="font-regular break-keep text-sm text-gray200">
                 {project.description}
               </p>
-              <button className="bg-[url('src/assets/image/ic_more_black.svg')] w-6 h-6 bg-cover mt-4" />
+              <button className="mt-4 h-6 w-6 bg-[url('src/assets/image/ic_more_black.svg')] bg-cover" />
             </div>
           </article>
         ))}

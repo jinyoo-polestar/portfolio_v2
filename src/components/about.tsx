@@ -22,15 +22,15 @@ interface AboutProps {
 export default function About({ sectionRef }: AboutProps) {
   return (
     <section
-      className="flex relative min-h-screen pb-20 border-b border-gray"
+      className="relative flex min-h-screen border-b border-gray pb-20"
       ref={sectionRef}
     >
       <article className="flex flex-col">
-        <div className="flex h-screen w-full items-center border border-gray sm:flex-col md:flex-row sm:h-fit md:h-screen">
-          <div className="h-full flex justify-center items-center sm:h-1/2 sm:w-full md:h-full md:w-5/12 bg-blue200">
+        <div className="flex h-screen w-full items-center border border-gray sm:h-fit sm:flex-col md:h-screen md:flex-row">
+          <div className="flex h-full items-center justify-center bg-blue200 sm:h-1/2 sm:w-full md:h-full md:w-5/12">
             <img src={codeLogo} className="w-2/3" />
           </div>
-          <div className="text-lg leading-relaxed break-keep w-3/5 p-20 sm:p-0 sm:mt-10 md:p-20 sm:w-4/5 md:w-3/5">
+          <div className="w-3/5 break-keep p-20 text-lg leading-relaxed sm:mt-10 sm:w-4/5 sm:p-0 md:w-3/5 md:p-20">
             안녕하세요!
             <br />
             <b>디테일과 완성도를 중시</b>하며, 사용자 경험(UX)과 최적화를 통해
@@ -43,15 +43,15 @@ export default function About({ sectionRef }: AboutProps) {
             트렌디하고 기능적인 결과물을 만드려고 노력합니다.
           </div>
         </div>
-        <article className="flex px-1/10 py-20 flex-row gap-4 flex-wrap justify-center">
-          <div className="flex flex-col border border-gray rounded-xl p-8">
-            <h3 className="section-subtitle font-higilight mb-6">경력사항</h3>
-            <div className="flex-wrap flex gap-2">
+        <article className="flex flex-row flex-wrap justify-center gap-4 px-1/10 py-20">
+          <div className="flex flex-col rounded-xl border border-gray p-8">
+            <h3 className="section-subtitle mb-6 font-higilight">경력사항</h3>
+            <div className="flex flex-wrap gap-2">
               {workData.map((work, _key) => (
                 <article className="career-card">
                   <img src={work.img} alt={work.name} className="w-16" />
                   <div>
-                    <h4 className="text-xl font-bold mb-2">{work.name}</h4>
+                    <h4 className="mb-2 text-xl font-bold">{work.name}</h4>
                     <ul>
                       {work.details.map((item) => (
                         <li>- {item}</li>
@@ -62,11 +62,11 @@ export default function About({ sectionRef }: AboutProps) {
               ))}
             </div>
           </div>
-          <div className="about-card border border-gray rounded-xl">
+          <div className="about-card rounded-xl border border-gray">
             <h3 className="section-subtitle font-higilight">
               사용 가능한 기술&툴
             </h3>
-            <div className="flex flex-wrap gap-4 w-full">
+            <div className="flex w-full flex-wrap gap-4">
               <img src={htmlLogo} alt="html" className="h-9" />
               <img src={cssLogo} alt="css" className="h-9" />
               <img src={reactLogo} alt="react" className="h-9" />
@@ -82,7 +82,7 @@ export default function About({ sectionRef }: AboutProps) {
               <img src={slackLogo} alt="slack" className="h-9" />
             </div>
           </div>
-          <div className="about-card border border-gray rounded-xl ">
+          <div className="about-card rounded-xl border border-gray">
             <h3 className="section-subtitle font-higilight">인적사항</h3>
             <div className="flex flex-col gap-4">
               <p>이름 : 신진유</p>
@@ -91,7 +91,7 @@ export default function About({ sectionRef }: AboutProps) {
               <p>이메일 : sju9808@naver.com</p>
             </div>
           </div>
-          <div className="about-card border border-gray rounded-xl">
+          <div className="about-card rounded-xl border border-gray">
             <h3 className="section-subtitle font-higilight">학력사항</h3>
             <div className="w-5/6">
               <p className="flex justify-between">
